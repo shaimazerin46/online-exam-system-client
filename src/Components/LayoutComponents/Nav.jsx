@@ -12,9 +12,10 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import logo from '../../assets/logo.png'
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router";
 import WebButton from "../WebButton/WebButton";
+import { AuthContext } from "../../Context/AuthProvider";
 
 const pages = [
   {name: 'Home', path:'/'},
@@ -26,6 +27,7 @@ const settings = [
 ];
 
 const Nav = () => {
+  const {user} = useContext(AuthContext)
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
 
@@ -123,20 +125,15 @@ const Nav = () => {
               </Button>
             ))}
           </Box>
-
-          <NavLink to='/auth'>
-          <WebButton text={"Login"}></WebButton>
-          </NavLink>
-
-          {/* User Settings */}
-          <Box sx={{ flexGrow: 0 }}>
+          {
+            user ?   <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src={user.photoURL} />
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: "45px" }}
+              sx={{ mt: "45px"}}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{ vertical: "top", horizontal: "right" }}
@@ -145,18 +142,33 @@ const Nav = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
-                  <NavLink
-                    to={setting.path}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    {setting.name}
-                  </NavLink>
-                </MenuItem>
-              ))}
+              <div className="p-5 text-center">
+              <Avatar alt="Remy Sharp" src={user.photoURL} className="mx-auto"/>
+              <p>Name: {user.displayName}</p>
+             <p> email: {user.email}</p>
+              </div>
+              
+           
+          <ul className="px-5 space-y-3">
+            <li>
+            <WebButton text={"Logout"}></WebButton>
+            </li>
+            <li>
+              <NavLink>Dashboard</NavLink>
+            </li>
+          </ul>
+          
+             
             </Menu>
-          </Box>
+          </Box> :  <NavLink to='/auth'>
+          <WebButton text={"Login"}></WebButton>
+          </NavLink>
+          }
+
+         
+
+          {/* User Settings */}
+        
         </Toolbar>
       </Container>
     </AppBar>
