@@ -7,15 +7,44 @@ import { PiEyeLight, PiEyeSlash } from 'react-icons/pi';
 import { useContext, useState } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../Context/AuthProvider';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
 const Register = () => {
+    const {createUser,updateProfileUser} = useContext(AuthContext)
     
     const { register, handleSubmit, formState: { errors }, } = useForm()
     const [showPassword,setShowPassword] = useState(false)
     const onSubmit = (data) => {
-        console.log(data)
+        console.log(data);
+        const email = data.email;
+        const password = data.password;
+        const name = data.name;
+        const photo = data.photo
+        createUser(email,password)
+        .then(()=>
+            {
+                updateProfileUser(name,photo)
+                .then(()=>{
+                    toast('Successfully registered!', {
+                        duration: 4000,
+                        position: 'top-center',
+                      
+                        style: {color: 'green'},
+                        icon: '👏',
+                      
+                        // Aria
+                        ariaProps: {
+                          role: 'status',
+                          'aria-live': 'polite',
+                        },
+                        removeDelay: 1000,
+                      });
+                })
+                
+            }
+        )
     }
     return (
         <div

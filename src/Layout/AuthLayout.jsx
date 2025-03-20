@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Nav from "../Components/LayoutComponents/Nav";
+import { Toaster } from "react-hot-toast";
 
 
 const AuthLayout = () => {
@@ -7,6 +8,7 @@ const AuthLayout = () => {
         <div>
             <Nav></Nav>
             <Outlet></Outlet>
+            <Toaster />
         </div>
     );
 };
