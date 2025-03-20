@@ -13,23 +13,30 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import logo from '../../assets/logo.png'
 import { useContext, useState } from "react";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import WebButton from "../WebButton/WebButton";
 import { AuthContext } from "../../Context/AuthProvider";
 
-const pages = [
-  {name: 'Home', path:'/'},
-  { name: "Exams", path: "/" }
-];
-const settings = [
-  { name: "Login", path: "/login" },
-  { name: "Profile", path: "/profile" },
-];
+
 
 const Nav = () => {
-  const {user} = useContext(AuthContext)
+  const {user,logout} = useContext(AuthContext);
+  const navigate = useNavigate()
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
+
+  const handlelogout = ()=>{
+    logout()
+    .then(()=>{
+      navigate('/auth')
+    })
+  }
+
+  const link = <>
+        <li> <NavLink to='/'>Home</NavLink>
+       </li>
+        <li> <NavLink>Exams</NavLink></li>
+  </>
 
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
   const handleOpenUserMenu = (event) => setAnchorElUser(event.currentTarget);
@@ -46,8 +53,6 @@ const Nav = () => {
           <Typography
             variant="h6"
             noWrap
-            component={NavLink}
-            to="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -58,6 +63,7 @@ const Nav = () => {
               textDecoration: "none",
             }}
           >
+            
             EduQuest
           </Typography>
 
@@ -76,21 +82,16 @@ const Nav = () => {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                  <NavLink
-                    to={page.path}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    {page.name}
-                  </NavLink>
-                </MenuItem>
-              ))}
+            
+            {/* menu Item */}
+            <ul className="p-5">
+              {link}
+            </ul>
             </Menu>
           </Box>
 
           {/* Small screen logo */}
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+         
           <Typography
             variant="h5"
             noWrap
@@ -100,30 +101,23 @@ const Nav = () => {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
+              fontFamily: "Atkinson Hyperlegible Mono",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            LOGO
+            EduQuest
           </Typography>
 
           {/* Desktop Menu */}
          
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page.name}
-                component={NavLink}
-                to={page.path}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" }}
-              >
-                {page.name}
-              </Button>
-            ))}
+            
+             <ul className="flex gap-5 my-2">
+              {link}
+            </ul>
           </Box>
           {
             user ?   <Box sx={{ flexGrow: 0 }}>
@@ -150,11 +144,12 @@ const Nav = () => {
               
            
           <ul className="px-5 space-y-3">
-            <li>
-            <WebButton text={"Logout"}></WebButton>
-            </li>
+            
             <li>
               <NavLink>Dashboard</NavLink>
+            </li>
+            <li onClick={handlelogout}>
+            <WebButton text={"Logout"}></WebButton>
             </li>
           </ul>
           
@@ -165,9 +160,6 @@ const Nav = () => {
           </NavLink>
           }
 
-         
-
-          {/* User Settings */}
         
         </Toolbar>
       </Container>

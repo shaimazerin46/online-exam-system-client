@@ -2,19 +2,22 @@ import Lottie from 'lottie-react';
 import regiImg from '../assets/lottie/login.json'
 import { useForm } from "react-hook-form"
 import WebButton from '../Components/WebButton/WebButton';
-import { GoEye } from "react-icons/go";
 import { PiEyeLight, PiEyeSlash } from 'react-icons/pi';
 import { useContext, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Context/AuthProvider';
-import toast, { Toaster } from 'react-hot-toast';
+import SocialButton from '../Components/WebButton/SocialButton';
+import FacebookButton from '../Components/WebButton/FacebookButton';
+import toast from 'react-hot-toast';
+
 
 
 
 const Register = () => {
-    const {createUser,updateProfileUser} = useContext(AuthContext)
+    const {createUser,updateProfileUser} = useContext(AuthContext);
+    const navigate=useNavigate()
     
-    const { register, handleSubmit, formState: { errors }, } = useForm()
+    const { register, handleSubmit, formState: { errors },reset } = useForm()
     const [showPassword,setShowPassword] = useState(false)
     const onSubmit = (data) => {
         console.log(data);
@@ -27,20 +30,35 @@ const Register = () => {
             {
                 updateProfileUser(name,photo)
                 .then(()=>{
-                    toast('Successfully registered!', {
+                    toast('Successfully registered!!', {
                         duration: 4000,
                         position: 'top-center',
                       
-                        style: {color: 'green'},
+                        // Styling
+                        style: {},
+                        className: '',
+                      
+                        // Custom Icon
                         icon: '👏',
+                      
+                        // Change colors of success/error/loading icon
+                        iconTheme: {
+                          primary: '#000',
+                          secondary: '#fff',
+                        },
                       
                         // Aria
                         ariaProps: {
                           role: 'status',
                           'aria-live': 'polite',
                         },
+                      
+                        // Additional Configuration
                         removeDelay: 1000,
                       });
+                       
+                      setTimeout(() => navigate('/'), 2000);
+                      reset()
                 })
                 
             }
@@ -124,14 +142,10 @@ const Register = () => {
                         )}
                         <p className='text-sm py-2'>Alrady have an accont?<Link to='/auth' className='text-blue-500'>Login</Link></p>
 
-                       <div className='flex gap-2'>
+                       <div className='flex gap-2 items-center'>
                        <WebButton text={"Submit"}></WebButton>
-                       <button>
-                        <img src="https://img.icons8.com/?size=48&id=17949&format=png" alt="" className='w-7'/>
-                       </button>
-                       <button>
-                        <img src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png" alt="" className='w-7'/>
-                       </button>
+                       <SocialButton></SocialButton>
+                       <FacebookButton></FacebookButton>
                        </div>
                         
                     </form>

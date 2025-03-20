@@ -4,7 +4,6 @@ const MainLayout = () => {
     return (
         <div>
             <Nav></Nav>
-            <h3>Hello</h3>
         </div>
     );
 };
