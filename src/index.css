@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+body{
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+.font-text{
+    font-family: "Yrsa", serif;
+}
+.primary-color{
+    color: #205781;
+}
+.secendary-color{
+    color: #4F959D;
+}
+.light-color{
+    color: #98D2C0;
+}
