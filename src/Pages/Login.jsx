@@ -60,19 +60,19 @@ const Login = () => {
         <div>
             <div
                 style={{ background: "linear-gradient(to right, #205781, #4F959D)" }}
-                className='min-h-screen flex items-center'
+                className='md:min-h-screen flex items-center'
             >
 
-                <div className='w-[800px] rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7'>
+                <div className='md:w-[800px] mt-30 rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7 flex-col md:flex-row'>
 
                     {/* animation */}
 
-                    <div className='w-[400px] '>
+                    <div className='md:w-[400px] '>
                         <Lottie animationData={loginImg}></Lottie>
                     </div>
 
                     {/* form */}
-                    <div className='w-[400px] '>
+                    <div className='md:w-[400px] '>
                         <h3 className='py-7 text-3xl primary-color font-bold'>Login</h3>
                         <form onSubmit={handleSubmit(onSubmit)}>
 

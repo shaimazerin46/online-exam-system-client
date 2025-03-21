@@ -136,14 +136,16 @@ const Nav = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <div className="p-5 text-center">
-              <Avatar alt="Remy Sharp" src={user.photoURL} className="mx-auto"/>
-              <p>Name: {user.displayName}</p>
-             <p> email: {user.email}</p>
+              <div className="px-2 text-center rounded-xl">
+             <div className="p-3 rounded-xl bg-blue-200">
+             <Avatar alt="Remy Sharp" src={user.photoURL} className="mx-auto"/>
+              <p className="text-sm">{user.displayName}</p>
+              <p className="text-sm text-gray-500"> {user.email}</p>
+             </div>
               </div>
               
            
-          <ul className="px-5 space-y-3">
+          <ul className="px-5 space-y-3 mt-2">
             
             <li>
               <NavLink>Dashboard</NavLink>
