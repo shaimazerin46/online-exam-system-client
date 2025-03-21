@@ -70,16 +70,16 @@ const Register = () => {
             className='min-h-screen flex items-center'
         >
 
-            <div className='w-[800px] rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7'>
+            <div className='md:w-[800px] mt-30 rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7 flex-col md:flex-row'>
 
                 {/* animation */}
 
-                <div className='w-[400px] '>
+                <div className='md:w-[400px] '>
                     <Lottie animationData={regiImg}></Lottie>
                 </div>
 
                 {/* form */}
-                <div className='w-[400px] '>
+                <div className='md:w-[400px] '>
                     <h3 className='py-7 text-3xl primary-color font-bold'>Register</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
