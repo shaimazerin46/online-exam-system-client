@@ -45,13 +45,13 @@ const Nav = () => {
   const handleCloseUserMenu = () => setAnchorElUser(null);
 
   return (
-    <AppBar position="static"  sx={{ backgroundColor: "transparent", color: "black", paddingY: '10px' }}>
+    <AppBar position="fixed"  sx={{  backgroundColor: "rgba(0, 0, 0, 0.3)",color: "white", paddingY: '10px'}}>
       <Container className="max-w-7xl">
         <Toolbar disableGutters>
           {/* Logo */}
           <img src={logo} alt="" className="w-15"/>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             sx={{
               mr: 2,

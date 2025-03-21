@@ -7,6 +7,8 @@ import Register from './Pages/Register'
 import AuthLayout from './Layout/AuthLayout'
 import Login from './Pages/Login'
 import AuthProvider from './Context/AuthProvider'
+import Home from './Pages/Home'
+
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,7 +16,10 @@ createRoot(document.getElementById('root')).render(
  <AuthProvider>
  <Routes>
     {/* Main layout */}
-    <Route path="/" element={<MainLayout />} />
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Home></Home>}></Route>
+    </Route>
+
 
     {/* Auth layout */}
     <Route path="/auth" element={<AuthLayout />}>
