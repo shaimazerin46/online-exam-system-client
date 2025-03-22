@@ -67,7 +67,7 @@ const Register = () => {
     return (
         <div
             style={{ background: "linear-gradient(to right, #205781, #4F959D)" }}
-            className='min-h-screen flex items-center'
+            className='md:min-h-screen flex items-center'
         >
 
             <div className='md:w-[800px] mt-30 rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7 flex-col md:flex-row'>

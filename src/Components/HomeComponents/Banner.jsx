@@ -13,23 +13,58 @@ const Banner = () => {
     return (
       <div>
        <Carousel autoPlay interval={1000} infiniteLoop showArrows={false}>
-         <div >
+         <div className="relative">
          <img src={img1} alt=""/>
+         <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
+           
+         Empower Your Learning Journey — Anytime, Anywhere!
+           
+         </p>
          </div>
-         <div>
+
+         <div className="relative">
             <img src={img2} alt=""/>
+            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
+           
+            Ace Your Exams — Online, Hassle-Free, and Fast!
+          
+        </p>
          </div>
-         <div>
+
+         <div className="relative"> 
             <img src={img3} alt=""/>
+            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
+           
+            An easy, secure, and reliable way to take your tests online.
+           
+         </p>
          </div>
-         <div>
+
+         <div className="relative">
             <img src={img4} alt=""/>
+            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
+           
+            Ready, Set, Succeed — Your Exams, Simplified!
+          
+        </p>
          </div>
-         <div>
+
+         <div className="relative">
             <img src={img5} alt=""/>
+            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
+           
+            Next-Gen Online Exams — Redefining the Way You Test!
+           
+         </p>
          </div>
-         <div>
+
+         <div className="relative">
             <img src={img6} alt=""/>
+            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
+           
+            Empower Your Learning Journey - Anytime, Anywhere
+           
+         </p>
          </div>
        </Carousel>
       </div>
