@@ -1,0 +1,515 @@
+[
+    {
+      "name": "AI",
+      "category": "easy",
+      "description": "Artificial Intelligence Quiz",
+      "questions": [
+        { "text": "What does AI stand for?", "options": ["Artificial Intelligence", "Automated Intelligence", "Advanced Intelligence", "Applied Intelligence"], "correctAnswer": "Artificial Intelligence" },
+        { "text": "Which of the following is a subset of AI?", "options": ["Machine Learning", "Data Mining", "Web Development", "Networking"], "correctAnswer": "Machine Learning" },
+        { "text": "What is the Turing Test used for?", "options": ["To test machine intelligence", "To test human intelligence", "To test network speed", "To test database performance"], "correctAnswer": "To test machine intelligence" },
+        { "text": "Which language is commonly used in AI?", "options": ["Python", "Java", "C++", "Ruby"], "correctAnswer": "Python" },
+        { "text": "What is an example of a weak AI?", "options": ["Siri", "Self-driving cars", "Robots with consciousness", "General AI"], "correctAnswer": "Siri" },
+        { "text": "What is the main goal of AI?", "options": ["To create intelligent machines", "To replace human jobs", "To improve network security", "To develop databases"], "correctAnswer": "To create intelligent machines" },
+        { "text": "Which of the following is NOT an AI application?", "options": ["Email spam filter", "Voice assistants", "Spreadsheet software", "Recommendation systems"], "correctAnswer": "Spreadsheet software" },
+        { "text": "What is supervised learning?", "options": ["Learning with labeled data", "Learning without data", "Learning with unlabeled data", "Learning through trial and error"], "correctAnswer": "Learning with labeled data" },
+        { "text": "What is reinforcement learning?", "options": ["Learning through rewards and penalties", "Learning with labeled data", "Learning without data", "Learning through supervised methods"], "correctAnswer": "Learning through rewards and penalties" },
+        { "text": "What is a neural network?", "options": ["A system modeled after the human brain", "A database system", "A type of computer hardware", "A programming language"], "correctAnswer": "A system modeled after the human brain" }
+      ]
+    },
+    {
+      "name": "AI",
+      "category": "medium",
+      "description": "Artificial Intelligence Quiz",
+      "questions": [
+        { "text": "What is a feature in machine learning?", "options": ["An input variable", "An output variable", "A type of algorithm", "A dataset"], "correctAnswer": "An input variable" },
+        { "text": "What is overfitting in AI?", "options": ["When a model learns the training data too well", "When a model fails to learn", "When a model is too simple", "When a model is not trained"], "correctAnswer": "When a model learns the training data too well" },
+        { "text": "What is a decision tree?", "options": ["A model used for classification and regression", "A type of database", "A network protocol", "A programming language"], "correctAnswer": "A model used for classification and regression" },
+        { "text": "What is the role of a loss function?", "options": ["To measure the model's performance", "To train the model", "To test the model", "To validate the model"], "correctAnswer": "To measure the model's performance" },
+        { "text": "What is cross-validation?", "options": ["A technique to assess model performance", "A type of algorithm", "A dataset", "A programming language"], "correctAnswer": "A technique to assess model performance" },
+        { "text": "What is a hyperparameter?", "options": ["A parameter set before training", "A parameter learned during training", "A type of dataset", "A type of algorithm"], "correctAnswer": "A parameter set before training" },
+        { "text": "What is the purpose of a test set?", "options": ["To evaluate the model's performance", "To train the model", "To validate the model", "To deploy the model"], "correctAnswer": "To evaluate the model's performance" },
+        { "text": "What is a confusion matrix?", "options": ["A table used to evaluate the performance of a classifier", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A table used to evaluate the performance of a classifier" },
+        { "text": "What is a feature vector?", "options": ["A set of features representing an object", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A set of features representing an object" },
+        { "text": "What is clustering in AI?", "options": ["Grouping similar data points together", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Grouping similar data points together" }
+      ]
+    },
+    {
+      "name": "AI",
+      "category": "hard",
+      "description": "Artificial Intelligence Quiz",
+      "questions": [
+        { "text": "What is backpropagation?", "options": ["A method for training neural networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A method for training neural networks" },
+        { "text": "What is a convolutional neural network?", "options": ["A type of neural network used for image processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for image processing" },
+        { "text": "What is a recurrent neural network?", "options": ["A type of neural network used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for sequential data" },
+        { "text": "What is a deep neural network?", "options": ["A neural network with multiple hidden layers", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A neural network with multiple hidden layers" },
+        { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
+        { "text": "What is transfer learning?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
+        { "text": "What is a Boltzmann machine?", "options": ["A type of stochastic recurrent neural network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of stochastic recurrent neural network" },
+        { "text": "What is reinforcement learning?", "options": ["Learning through rewards and penalties", "Learning with labeled data", "Learning without data", "Learning through supervised methods"], "correctAnswer": "Learning through rewards and penalties" },
+        { "text": "What is a Markov decision process?", "options": ["A mathematical framework for modeling decision-making", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A mathematical framework for modeling decision-making" },
+        { "text": "What is Q-learning?", "options": ["A model-free reinforcement learning algorithm", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model-free reinforcement learning algorithm" }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "category": "easy",
+      "description": "Machine Learning Quiz",
+      "questions": [
+        { "text": "What is machine learning?", "options": ["A subset of AI", "A type of database", "A programming language", "A network protocol"], "correctAnswer": "A subset of AI" },
+        { "text": "Which of the following is a type of machine learning?", "options": ["Supervised learning", "Data mining", "Web scraping", "Network analysis"], "correctAnswer": "Supervised learning" },
+        { "text": "What is overfitting in machine learning?", "options": ["When a model learns the training data too well", "When a model fails to learn", "When a model is too simple", "When a model is not trained"], "correctAnswer": "When a model learns the training data too well" },
+        { "text": "What is a feature in machine learning?", "options": ["An input variable", "An output variable", "A type of algorithm", "A dataset"], "correctAnswer": "An input variable" },
+        { "text": "What is the purpose of a training set?", "options": ["To train the model", "To test the model", "To validate the model", "To deploy the model"], "correctAnswer": "To train the model" },
+        { "text": "What is a decision tree?", "options": ["A model used for classification and regression", "A type of database", "A network protocol", "A programming language"], "correctAnswer": "A model used for classification and regression" },
+        { "text": "What is the role of a loss function?", "options": ["To measure the model's performance", "To train the model", "To test the model", "To validate the model"], "correctAnswer": "To measure the model's performance" },
+        { "text": "What is cross-validation?", "options": ["A technique to assess model performance", "A type of algorithm", "A dataset", "A programming language"], "correctAnswer": "A technique to assess model performance" },
+        { "text": "What is a hyperparameter?", "options": ["A parameter set before training", "A parameter learned during training", "A type of dataset", "A type of algorithm"], "correctAnswer": "A parameter set before training" },
+        { "text": "What is the purpose of a test set?", "options": ["To evaluate the model's performance", "To train the model", "To validate the model", "To deploy the model"], "correctAnswer": "To evaluate the model's performance" }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "category": "medium",
+      "description": "Machine Learning Quiz",
+      "questions": [
+        { "text": "What is a confusion matrix?", "options": ["A table used to evaluate the performance of a classifier", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A table used to evaluate the performance of a classifier" },
+        { "text": "What is a feature vector?", "options": ["A set of features representing an object", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A set of features representing an object" },
+        { "text": "What is clustering in machine learning?", "options": ["Grouping similar data points together", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Grouping similar data points together" },
+        { "text": "What is classification in machine learning?", "options": ["Assigning a label to an input based on its features", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Assigning a label to an input based on its features" },
+        { "text": "What is a decision boundary?", "options": ["A boundary that separates different classes", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A boundary that separates different classes" },
+        { "text": "What is a support vector machine?", "options": ["A supervised learning model for classification and regression", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A supervised learning model for classification and regression" },
+        { "text": "What is a random forest?", "options": ["An ensemble learning method using multiple decision trees", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "An ensemble learning method using multiple decision trees" },
+        { "text": "What is gradient descent?", "options": ["An optimization algorithm to minimize the loss function", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "An optimization algorithm to minimize the loss function" },
+        { "text": "What is a neural network?", "options": ["A system modeled after the human brain", "A database system", "A type of computer hardware", "A programming language"], "correctAnswer": "A system modeled after the human brain" },
+        { "text": "What is a convolutional neural network?", "options": ["A type of neural network used for image processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for image processing" }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "category": "hard",
+      "description": "Machine Learning Quiz",
+      "questions": [
+        { "text": "What is backpropagation?", "options": ["A method for training neural networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A method for training neural networks" },
+        { "text": "What is a recurrent neural network?", "options": ["A type of neural network used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for sequential data" },
+        { "text": "What is a deep neural network?", "options": ["A neural network with multiple hidden layers", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A neural network with multiple hidden layers" },
+        { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
+        { "text": "What is transfer learning?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
+        { "text": "What is a Boltzmann machine?", "options": ["A type of stochastic recurrent neural network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of stochastic recurrent neural network" },
+        { "text": "What is reinforcement learning?", "options": ["Learning through rewards and penalties", "Learning with labeled data", "Learning without data", "Learning through supervised methods"], "correctAnswer": "Learning through rewards and penalties" },
+        { "text": "What is a Markov decision process?", "options": ["A mathematical framework for modeling decision-making", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A mathematical framework for modeling decision-making" },
+        { "text": "What is Q-learning?", "options": ["A model-free reinforcement learning algorithm", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model-free reinforcement learning algorithm" },
+        { "text": "What is a transformer in machine learning?", "options": ["A model architecture used for natural language processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model architecture used for natural language processing" }
+      ]
+    },
+    {
+      "name": "Operating System",
+      "category": "easy",
+      "description": "Operating System Quiz",
+      "questions": [
+        { "text": "What is an operating system?", "options": ["System software", "Application software", "Hardware", "Network protocol"], "correctAnswer": "System software" },
+        { "text": "Which of the following is an example of an operating system?", "options": ["Windows", "Microsoft Office", "Adobe Photoshop", "Google Chrome"], "correctAnswer": "Windows" },
+        { "text": "What is the main function of an operating system?", "options": ["To manage hardware and software resources", "To run applications", "To connect to the internet", "To store data"], "correctAnswer": "To manage hardware and software resources" },
+        { "text": "What is a process in an operating system?", "options": ["A program in execution", "A type of hardware", "A network protocol", "A database"], "correctAnswer": "A program in execution" },
+        { "text": "What is virtual memory?", "options": ["A memory management technique", "A type of RAM", "A type of storage", "A network protocol"], "correctAnswer": "A memory management technique" },
+        { "text": "What is a file system?", "options": ["A way to organize and store files", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A way to organize and store files" },
+        { "text": "What is multitasking?", "options": ["Running multiple tasks simultaneously", "Running one task at a time", "A type of hardware", "A network protocol"], "correctAnswer": "Running multiple tasks simultaneously" },
+        { "text": "What is a kernel?", "options": ["The core part of an operating system", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "The core part of an operating system" },
+        { "text": "What is a deadlock?", "options": ["A situation where processes are blocked", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A situation where processes are blocked" },
+        { "text": "What is a shell?", "options": ["A user interface to access services", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A user interface to access services" }
+      ]
+    },
+    {
+      "name": "Operating System",
+      "category": "medium",
+      "description": "Operating System Quiz",
+      "questions": [
+        { "text": "What is a thread?", "options": ["The smallest unit of execution within a process", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "The smallest unit of execution within a process" },
+        { "text": "What is a semaphore?", "options": ["A synchronization tool", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A synchronization tool" },
+        { "text": "What is paging?", "options": ["A memory management scheme", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A memory management scheme" },
+        { "text": "What is a context switch?", "options": ["The process of storing and restoring the state of a process", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "The process of storing and restoring the state of a process" },
+        { "text": "What is a system call?", "options": ["A way for programs to interact with the operating system", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A way for programs to interact with the operating system" },
+        { "text": "What is a real-time operating system?", "options": ["An OS designed for real-time applications", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "An OS designed for real-time applications" },
+        { "text": "What is a distributed operating system?", "options": ["An OS that manages a group of independent computers", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "An OS that manages a group of independent computers" },
+        { "text": "What is a device driver?", "options": ["Software that controls hardware devices", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "Software that controls hardware devices" },
+        { "text": "What is a bootloader?", "options": ["A program that loads the operating system", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A program that loads the operating system" },
+        { "text": "What is a file descriptor?", "options": ["An identifier for an open file", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "An identifier for an open file" }
+      ]
+    },
+    {
+      "name": "Operating System",
+      "category": "hard",
+      "description": "Operating System Quiz",
+      "questions": [
+        { "text": "What is a race condition?", "options": ["A situation where the behavior of software depends on timing", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A situation where the behavior of software depends on timing" },
+        { "text": "What is a critical section?", "options": ["A part of a program that accesses shared resources", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A part of a program that accesses shared resources" },
+        { "text": "What is a memory leak?", "options": ["A situation where memory is not released after use", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A situation where memory is not released after use" },
+        { "text": "What is thrashing?", "options": ["A situation where the system spends more time paging than executing", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A situation where the system spends more time paging than executing" },
+        { "text": "What is a zombie process?", "options": ["A process that has completed execution but still has an entry in the process table", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A process that has completed execution but still has an entry in the process table" },
+        { "text": "What is a daemon process?", "options": ["A background process that runs continuously", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A background process that runs continuously" },
+        { "text": "What is a system image?", "options": ["A snapshot of the state of a system", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A snapshot of the state of a system" },
+        { "text": "What is a page fault?", "options": ["An interrupt that occurs when a program accesses a page not in memory", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "An interrupt that occurs when a program accesses a page not in memory" },
+        { "text": "What is a swap space?", "options": ["A portion of the hard disk used as virtual memory", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A portion of the hard disk used as virtual memory" },
+        { "text": "What is a real-time clock?", "options": ["A clock that keeps track of the current time", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A clock that keeps track of the current time" }
+      ]
+    },
+    {
+      "name": "Database Management System",
+      "category": "easy",
+      "description": "Database Management System Quiz",
+      "questions": [
+        { "text": "What is a DBMS?", "options": ["Database Management System", "Data Backup Management System", "Data Binary Management System", "Data Business Management System"], "correctAnswer": "Database Management System" },
+        { "text": "Which of the following is a type of DBMS?", "options": ["Relational DBMS", "Network DBMS", "Object-oriented DBMS", "All of the above"], "correctAnswer": "All of the above" },
+        { "text": "What is SQL?", "options": ["Structured Query Language", "Simple Query Language", "Structured Question Language", "Simple Question Language"], "correctAnswer": "Structured Query Language" },
+        { "text": "What is a primary key?", "options": ["A unique identifier for a record", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A unique identifier for a record" },
+        { "text": "What is normalization?", "options": ["The process of organizing data", "The process of deleting data", "The process of backing up data", "The process of encrypting data"], "correctAnswer": "The process of organizing data" },
+        { "text": "What is a foreign key?", "options": ["A key that links two tables", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A key that links two tables" },
+        { "text": "What is a transaction?", "options": ["A sequence of operations performed as a single logical unit", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A sequence of operations performed as a single logical unit" },
+        { "text": "What is ACID in DBMS?", "options": ["Atomicity, Consistency, Isolation, Durability", "Atomicity, Consistency, Integrity, Durability", "Atomicity, Consistency, Isolation, Data", "Atomicity, Consistency, Integrity, Data"], "correctAnswer": "Atomicity, Consistency, Isolation, Durability" },
+        { "text": "What is a view in DBMS?", "options": ["A virtual table based on the result-set of an SQL statement", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A virtual table based on the result-set of an SQL statement" },
+        { "text": "What is indexing?", "options": ["A technique to improve the speed of data retrieval", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A technique to improve the speed of data retrieval" }
+      ]
+    },
+    {
+      "name": "Database Management System",
+      "category": "medium",
+      "description": "Database Management System Quiz",
+      "questions": [
+        { "text": "What is a join in SQL?", "options": ["A way to combine rows from two or more tables", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A way to combine rows from two or more tables" },
+        { "text": "What is a subquery?", "options": ["A query within another query", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A query within another query" },
+        { "text": "What is a trigger in DBMS?", "options": ["A procedure that is automatically executed in response to an event", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A procedure that is automatically executed in response to an event" },
+        { "text": "What is a stored procedure?", "options": ["A set of SQL statements stored in the database", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A set of SQL statements stored in the database" },
+        { "text": "What is a database schema?", "options": ["The structure of the database", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "The structure of the database" },
+        { "text": "What is a database index?", "options": ["A data structure that improves the speed of data retrieval", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A data structure that improves the speed of data retrieval" },
+        { "text": "What is a database transaction?", "options": ["A sequence of operations performed as a single logical unit", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A sequence of operations performed as a single logical unit" },
+        { "text": "What is a database constraint?", "options": ["A rule that enforces data integrity", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A rule that enforces data integrity" },
+        { "text": "What is a database view?", "options": ["A virtual table based on the result-set of an SQL statement", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A virtual table based on the result-set of an SQL statement" },
+        { "text": "What is a database cursor?", "options": ["A control structure that enables traversal over the records in a database", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A control structure that enables traversal over the records in a database" }
+      ]
+    },
+    {
+      "name": "Database Management System",
+      "category": "hard",
+      "description": "Database Management System Quiz",
+      "questions": [
+        { "text": "What is a deadlock in DBMS?", "options": ["A situation where two or more transactions are waiting for each other to release locks", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A situation where two or more transactions are waiting for each other to release locks" },
+        { "text": "What is a database checkpoint?", "options": ["A point in time where the database is in a consistent state", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A point in time where the database is in a consistent state" },
+        { "text": "What is a database replication?", "options": ["The process of copying data from one database to another", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "The process of copying data from one database to another" },
+        { "text": "What is a database shard?", "options": ["A horizontal partition of data in a database", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A horizontal partition of data in a database" },
+        { "text": "What is a database cluster?", "options": ["A group of databases that work together", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A group of databases that work together" },
+        { "text": "What is a database trigger?", "options": ["A procedure that is automatically executed in response to an event", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A procedure that is automatically executed in response to an event" },
+        { "text": "What is a database cursor?", "options": ["A control structure that enables traversal over the records in a database", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A control structure that enables traversal over the records in a database" },
+        { "text": "What is a database view?", "options": ["A virtual table based on the result-set of an SQL statement", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A virtual table based on the result-set of an SQL statement" },
+        { "text": "What is a database index?", "options": ["A data structure that improves the speed of data retrieval", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A data structure that improves the speed of data retrieval" },
+        { "text": "What is a database transaction?", "options": ["A sequence of operations performed as a single logical unit", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A sequence of operations performed as a single logical unit" }
+      ]
+    },
+    {
+        "name": "Web Development",
+        "category": "easy",
+        "description": "Web Development Quiz",
+        "questions": [
+          { "text": "What does HTML stand for?", "options": ["HyperText Markup Language", "HyperText Machine Language", "HyperText Markup Link", "HyperText Machine Link"], "correctAnswer": "HyperText Markup Language" },
+          { "text": "What is CSS used for?", "options": ["Styling web pages", "Creating databases", "Writing server-side code", "Managing networks"], "correctAnswer": "Styling web pages" },
+          { "text": "Which language is used for client-side scripting?", "options": ["JavaScript", "Python", "Java", "C++"], "correctAnswer": "JavaScript" },
+          { "text": "What is a responsive web design?", "options": ["Designing websites to work on all devices", "Designing websites for speed", "Designing websites for security", "Designing websites for databases"], "correctAnswer": "Designing websites to work on all devices" },
+          { "text": "What is a framework in web development?", "options": ["A pre-built structure for developing websites", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A pre-built structure for developing websites" },
+          { "text": "What is a CMS?", "options": ["Content Management System", "Content Management Software", "Content Management Script", "Content Management Server"], "correctAnswer": "Content Management System" },
+          { "text": "What is a domain name?", "options": ["The address of a website", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "The address of a website" },
+          { "text": "What is a web server?", "options": ["A server that hosts websites", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A server that hosts websites" },
+          { "text": "What is an API?", "options": ["Application Programming Interface", "Application Protocol Interface", "Application Programming Internet", "Application Protocol Internet"], "correctAnswer": "Application Programming Interface" },
+          { "text": "What is a cookie in web development?", "options": ["A small piece of data stored on the client side", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A small piece of data stored on the client side" }
+        ]
+      },
+      {
+        "name": "Web Development",
+        "category": "medium",
+        "description": "Web Development Quiz",
+        "questions": [
+          { "text": "What is AJAX?", "options": ["Asynchronous JavaScript and XML", "Advanced JavaScript and XML", "Asynchronous JavaScript and XHTML", "Advanced JavaScript and XHTML"], "correctAnswer": "Asynchronous JavaScript and XML" },
+          { "text": "What is a REST API?", "options": ["An architectural style for designing networked applications", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "An architectural style for designing networked applications" },
+          { "text": "What is a single-page application (SPA)?", "options": ["A web application that loads a single HTML page", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A web application that loads a single HTML page" },
+          { "text": "What is a CDN?", "options": ["Content Delivery Network", "Content Distribution Network", "Content Data Network", "Content Delivery Node"], "correctAnswer": "Content Delivery Network" },
+          { "text": "What is a web socket?", "options": ["A protocol for real-time communication", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A protocol for real-time communication" },
+          { "text": "What is a progressive web app (PWA)?", "options": ["A web app that works like a native app", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A web app that works like a native app" },
+          { "text": "What is a CSS preprocessor?", "options": ["A tool that extends CSS with features like variables and nesting", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A tool that extends CSS with features like variables and nesting" },
+          { "text": "What is a webpack?", "options": ["A module bundler for JavaScript", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A module bundler for JavaScript" },
+          { "text": "What is a virtual DOM?", "options": ["A lightweight copy of the DOM", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A lightweight copy of the DOM" },
+          { "text": "What is a middleware in web development?", "options": ["Software that connects different applications or services", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "Software that connects different applications or services" }
+        ]
+      },
+      {
+        "name": "Web Development",
+        "category": "hard",
+        "description": "Web Development Quiz",
+        "questions": [
+          { "text": "What is server-side rendering (SSR)?", "options": ["Rendering web pages on the server", "Rendering web pages on the client", "A type of database", "A network protocol"], "correctAnswer": "Rendering web pages on the server" },
+          { "text": "What is client-side rendering (CSR)?", "options": ["Rendering web pages on the client", "Rendering web pages on the server", "A type of database", "A network protocol"], "correctAnswer": "Rendering web pages on the client" },
+          { "text": "What is a GraphQL API?", "options": ["A query language for APIs", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A query language for APIs" },
+          { "text": "What is a JWT (JSON Web Token)?", "options": ["A token used for authentication", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A token used for authentication" },
+          { "text": "What is a CORS policy?", "options": ["A mechanism to allow cross-origin requests", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A mechanism to allow cross-origin requests" },
+          { "text": "What is a web worker?", "options": ["A script that runs in the background", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A script that runs in the background" },
+          { "text": "What is a service worker?", "options": ["A script that acts as a proxy between the browser and the network", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A script that acts as a proxy between the browser and the network" },
+          { "text": "What is a microservices architecture?", "options": ["An architectural style that structures an application as a collection of services", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "An architectural style that structures an application as a collection of services" },
+          { "text": "What is a container in web development?", "options": ["A lightweight, standalone executable package of software", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A lightweight, standalone executable package of software" },
+          { "text": "What is a headless CMS?", "options": ["A CMS that provides content via an API", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "A CMS that provides content via an API" }
+        ]
+      },
+      {
+        "name": "Networking",
+        "category": "easy",
+        "description": "Networking Quiz",
+        "questions": [
+          { "text": "What is a network?", "options": ["A group of interconnected devices", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A group of interconnected devices" },
+          { "text": "What is an IP address?", "options": ["A unique identifier for a device on a network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A unique identifier for a device on a network" },
+          { "text": "What is a router?", "options": ["A device that forwards data packets between networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A device that forwards data packets between networks" },
+          { "text": "What is a firewall?", "options": ["A security system that controls incoming and outgoing network traffic", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A security system that controls incoming and outgoing network traffic" },
+          { "text": "What is DNS?", "options": ["Domain Name System", "Domain Name Server", "Domain Name Software", "Domain Name Script"], "correctAnswer": "Domain Name System" },
+          { "text": "What is a protocol in networking?", "options": ["A set of rules for communication", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A set of rules for communication" },
+          { "text": "What is a MAC address?", "options": ["A unique identifier for a network interface", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A unique identifier for a network interface" },
+          { "text": "What is a VPN?", "options": ["Virtual Private Network", "Virtual Public Network", "Virtual Protocol Network", "Virtual Public Node"], "correctAnswer": "Virtual Private Network" },
+          { "text": "What is a switch in networking?", "options": ["A device that connects devices within a network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A device that connects devices within a network" },
+          { "text": "What is a packet in networking?", "options": ["A unit of data transmitted over a network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A unit of data transmitted over a network" }
+        ]
+      },
+      {
+        "name": "Networking",
+        "category": "medium",
+        "description": "Networking Quiz",
+        "questions": [
+          { "text": "What is TCP/IP?", "options": ["A suite of communication protocols", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A suite of communication protocols" },
+          { "text": "What is UDP?", "options": ["A connectionless communication protocol", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A connectionless communication protocol" },
+          { "text": "What is NAT?", "options": ["Network Address Translation", "Network Access Translation", "Network Address Transfer", "Network Access Transfer"], "correctAnswer": "Network Address Translation" },
+          { "text": "What is DHCP?", "options": ["Dynamic Host Configuration Protocol", "Dynamic Host Communication Protocol", "Dynamic Host Configuration Process", "Dynamic Host Communication Process"], "correctAnswer": "Dynamic Host Configuration Protocol" },
+          { "text": "What is ARP?", "options": ["Address Resolution Protocol", "Address Resolution Process", "Address Resolution Packet", "Address Resolution Port"], "correctAnswer": "Address Resolution Protocol" },
+          { "text": "What is a subnet mask?", "options": ["A mask used to divide an IP address into network and host addresses", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A mask used to divide an IP address into network and host addresses" },
+          { "text": "What is a gateway?", "options": ["A device that connects two networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A device that connects two networks" },
+          { "text": "What is a proxy server?", "options": ["A server that acts as an intermediary for requests", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A server that acts as an intermediary for requests" },
+          { "text": "What is a VLAN?", "options": ["Virtual Local Area Network", "Virtual Logical Area Network", "Virtual Local Access Network", "Virtual Logical Access Network"], "correctAnswer": "Virtual Local Area Network" },
+          { "text": "What is a WAN?", "options": ["Wide Area Network", "Wide Access Network", "Wide Area Node", "Wide Access Node"], "correctAnswer": "Wide Area Network" }
+        ]
+      },
+      {
+        "name": "Networking",
+        "category": "hard",
+        "description": "Networking Quiz",
+        "questions": [
+          { "text": "What is BGP?", "options": ["Border Gateway Protocol", "Border Gateway Process", "Border Gateway Packet", "Border Gateway Port"], "correctAnswer": "Border Gateway Protocol" },
+          { "text": "What is OSPF?", "options": ["Open Shortest Path First", "Open Shortest Path Forward", "Open Shortest Path File", "Open Shortest Path Format"], "correctAnswer": "Open Shortest Path First" },
+          { "text": "What is MPLS?", "options": ["Multiprotocol Label Switching", "Multiprotocol Label System", "Multiprotocol Label Service", "Multiprotocol Label Structure"], "correctAnswer": "Multiprotocol Label Switching" },
+          { "text": "What is QoS?", "options": ["Quality of Service", "Quality of System", "Quality of Service", "Quality of Structure"], "correctAnswer": "Quality of Service" },
+          { "text": "What is a VPN tunnel?", "options": ["A secure connection between two networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A secure connection between two networks" },
+          { "text": "What is a DDoS attack?", "options": ["Distributed Denial of Service attack", "Distributed Denial of System attack", "Distributed Denial of Service access", "Distributed Denial of System access"], "correctAnswer": "Distributed Denial of Service attack" },
+          { "text": "What is a firewall rule?", "options": ["A rule that defines how traffic is handled by a firewall", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A rule that defines how traffic is handled by a firewall" },
+          { "text": "What is a network topology?", "options": ["The arrangement of elements in a network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "The arrangement of elements in a network" },
+          { "text": "What is a packet sniffer?", "options": ["A tool used to capture and analyze network traffic", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A tool used to capture and analyze network traffic" },
+          { "text": "What is a network interface card (NIC)?", "options": ["A hardware component that connects a computer to a network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A hardware component that connects a computer to a network" }
+        ]
+      },
+      {
+        "name": "Pattern Recognition",
+        "category": "easy",
+        "description": "Pattern Recognition Quiz",
+        "questions": [
+          { "text": "What is pattern recognition?", "options": ["The identification of patterns in data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "The identification of patterns in data" },
+          { "text": "Which of the following is a technique used in pattern recognition?", "options": ["Machine learning", "Data mining", "Web development", "Networking"], "correctAnswer": "Machine learning" },
+          { "text": "What is a feature vector?", "options": ["A set of features representing an object", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A set of features representing an object" },
+          { "text": "What is clustering in pattern recognition?", "options": ["Grouping similar data points together", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Grouping similar data points together" },
+          { "text": "What is classification in pattern recognition?", "options": ["Assigning a label to an input based on its features", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Assigning a label to an input based on its features" },
+          { "text": "What is a decision boundary?", "options": ["A boundary that separates different classes", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A boundary that separates different classes" },
+          { "text": "What is a confusion matrix?", "options": ["A table used to evaluate the performance of a classifier", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A table used to evaluate the performance of a classifier" },
+          { "text": "What is overfitting in pattern recognition?", "options": ["When a model learns the training data too well", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "When a model learns the training data too well" },
+          { "text": "What is feature extraction?", "options": ["The process of selecting relevant features from data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "The process of selecting relevant features from data" },
+          { "text": "What is a pattern?", "options": ["A regularity in data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A regularity in data" }
+        ]
+      },
+      {
+        "name": "Pattern Recognition",
+        "category": "medium",
+        "description": "Pattern Recognition Quiz",
+        "questions": [
+          { "text": "What is supervised learning in pattern recognition?", "options": ["Learning with labeled data", "Learning without data", "Learning with unlabeled data", "Learning through trial and error"], "correctAnswer": "Learning with labeled data" },
+          { "text": "What is unsupervised learning in pattern recognition?", "options": ["Learning with unlabeled data", "Learning with labeled data", "Learning without data", "Learning through trial and error"], "correctAnswer": "Learning with unlabeled data" },
+          { "text": "What is a support vector machine (SVM)?", "options": ["A supervised learning model for classification and regression", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A supervised learning model for classification and regression" },
+          { "text": "What is a k-nearest neighbors (k-NN) algorithm?", "options": ["A classification algorithm based on similarity", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A classification algorithm based on similarity" },
+          { "text": "What is principal component analysis (PCA)?", "options": ["A dimensionality reduction technique", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A dimensionality reduction technique" },
+          { "text": "What is a decision tree in pattern recognition?", "options": ["A model used for classification and regression", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model used for classification and regression" },
+          { "text": "What is a random forest?", "options": ["An ensemble learning method using multiple decision trees", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "An ensemble learning method using multiple decision trees" },
+          { "text": "What is a neural network in pattern recognition?", "options": ["A system modeled after the human brain", "A database system", "A type of computer hardware", "A programming language"], "correctAnswer": "A system modeled after the human brain" },
+          { "text": "What is a convolutional neural network (CNN)?", "options": ["A type of neural network used for image processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for image processing" },
+          { "text": "What is a recurrent neural network (RNN)?", "options": ["A type of neural network used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for sequential data" }
+        ]
+      },
+      {
+        "name": "Pattern Recognition",
+        "category": "hard",
+        "description": "Pattern Recognition Quiz",
+        "questions": [
+          { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
+          { "text": "What is transfer learning in pattern recognition?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
+          { "text": "What is a Boltzmann machine?", "options": ["A type of stochastic recurrent neural network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of stochastic recurrent neural network" },
+          { "text": "What is reinforcement learning in pattern recognition?", "options": ["Learning through rewards and penalties", "Learning with labeled data", "Learning without data", "Learning through supervised methods"], "correctAnswer": "Learning through rewards and penalties" },
+          { "text": "What is a Markov decision process?", "options": ["A mathematical framework for modeling decision-making", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A mathematical framework for modeling decision-making" },
+          { "text": "What is Q-learning?", "options": ["A model-free reinforcement learning algorithm", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model-free reinforcement learning algorithm" },
+          { "text": "What is a transformer in pattern recognition?", "options": ["A model architecture used for natural language processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model architecture used for natural language processing" },
+          { "text": "What is a self-organizing map (SOM)?", "options": ["A type of artificial neural network used for dimensionality reduction", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of artificial neural network used for dimensionality reduction" },
+          { "text": "What is a hidden Markov model (HMM)?", "options": ["A statistical model used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A statistical model used for sequential data" },
+          { "text": "What is a deep belief network (DBN)?", "options": ["A generative graphical model", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A generative graphical model" }
+        ]
+      },
+      {
+        "name": "Neural Network",
+        "category": "easy",
+        "description": "Neural Network Quiz",
+        "questions": [
+          { "text": "What is a neural network?", "options": ["A system modeled after the human brain", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system modeled after the human brain" },
+          { "text": "What is a neuron in a neural network?", "options": ["A basic unit of computation", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A basic unit of computation" },
+          { "text": "What is an activation function?", "options": ["A function that determines the output of a neuron", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A function that determines the output of a neuron" },
+          { "text": "What is backpropagation?", "options": ["A method for training neural networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A method for training neural networks" },
+          { "text": "What is a hidden layer?", "options": ["A layer between input and output layers", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A layer between input and output layers" },
+          { "text": "What is a weight in a neural network?", "options": ["A parameter that adjusts the strength of a connection", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A parameter that adjusts the strength of a connection" },
+          { "text": "What is a bias in a neural network?", "options": ["A parameter that adjusts the output along with the weighted sum", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A parameter that adjusts the output along with the weighted sum" },
+          { "text": "What is a convolutional neural network?", "options": ["A type of neural network used for image processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for image processing" },
+          { "text": "What is a recurrent neural network?", "options": ["A type of neural network used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for sequential data" },
+          { "text": "What is a deep neural network?", "options": ["A neural network with multiple hidden layers", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A neural network with multiple hidden layers" }
+        ]
+      },
+      {
+        "name": "Neural Network",
+        "category": "medium",
+        "description": "Neural Network Quiz",
+        "questions": [
+          { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
+          { "text": "What is transfer learning in neural networks?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
+          { "text": "What is a Boltzmann machine?", "options": ["A type of stochastic recurrent neural network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of stochastic recurrent neural network" },
+          { "text": "What is reinforcement learning in neural networks?", "options": ["Learning through rewards and penalties", "Learning with labeled data", "Learning without data", "Learning through supervised methods"], "correctAnswer": "Learning through rewards and penalties" },
+          { "text": "What is a Markov decision process?", "options": ["A mathematical framework for modeling decision-making", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A mathematical framework for modeling decision-making" },
+          { "text": "What is Q-learning?", "options": ["A model-free reinforcement learning algorithm", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model-free reinforcement learning algorithm" },
+          { "text": "What is a transformer in neural networks?", "options": ["A model architecture used for natural language processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model architecture used for natural language processing" },
+          { "text": "What is a self-organizing map (SOM)?", "options": ["A type of artificial neural network used for dimensionality reduction", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of artificial neural network used for dimensionality reduction" },
+          { "text": "What is a hidden Markov model (HMM)?", "options": ["A statistical model used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A statistical model used for sequential data" },
+          { "text": "What is a deep belief network (DBN)?", "options": ["A generative graphical model", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A generative graphical model" }
+        ]
+      },
+      {
+        "name": "Neural Network",
+        "category": "hard",
+        "description": "Neural Network Quiz",
+        "questions": [
+          { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
+          { "text": "What is transfer learning in neural networks?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
+          { "text": "What is a Boltzmann machine?", "options": ["A type of stochastic recurrent neural network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of stochastic recurrent neural network" },
+          { "text": "What is reinforcement learning in neural networks?", "options": ["Learning through rewards and penalties", "Learning with labeled data", "Learning without data", "Learning through supervised methods"], "correctAnswer": "Learning through rewards and penalties" },
+          { "text": "What is a Markov decision process?", "options": ["A mathematical framework for modeling decision-making", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A mathematical framework for modeling decision-making" },
+          { "text": "What is Q-learning?", "options": ["A model-free reinforcement learning algorithm", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model-free reinforcement learning algorithm" },
+          { "text": "What is a transformer in neural networks?", "options": ["A model architecture used for natural language processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A model architecture used for natural language processing" },
+          { "text": "What is a self-organizing map (SOM)?", "options": ["A type of artificial neural network used for dimensionality reduction", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of artificial neural network used for dimensionality reduction" },
+          { "text": "What is a hidden Markov model (HMM)?", "options": ["A statistical model used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A statistical model used for sequential data" },
+          { "text": "What is a deep belief network (DBN)?", "options": ["A generative graphical model", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A generative graphical model" }
+        ]
+      },
+      {
+        "name": "Statistics",
+        "category": "easy",
+        "description": "Statistics Quiz",
+        "questions": [
+          { "text": "What is the mean?", "options": ["The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers", "The difference between the highest and lowest values"], "correctAnswer": "The average of a set of numbers" },
+          { "text": "What is the median?", "options": ["The middle value in a set of numbers", "The average of a set of numbers", "The most frequent value in a set of numbers", "The difference between the highest and lowest values"], "correctAnswer": "The middle value in a set of numbers" },
+          { "text": "What is the mode?", "options": ["The most frequent value in a set of numbers", "The average of a set of numbers", "The middle value in a set of numbers", "The difference between the highest and lowest values"], "correctAnswer": "The most frequent value in a set of numbers" },
+          { "text": "What is standard deviation?", "options": ["A measure of the spread of data", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A measure of the spread of data" },
+          { "text": "What is a probability distribution?", "options": ["A function that describes the likelihood of obtaining possible values", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A function that describes the likelihood of obtaining possible values" },
+          { "text": "What is correlation?", "options": ["A measure of the relationship between two variables", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A measure of the relationship between two variables" },
+          { "text": "What is a p-value?", "options": ["The probability of obtaining the observed results, assuming the null hypothesis is true", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "The probability of obtaining the observed results, assuming the null hypothesis is true" },
+          { "text": "What is a hypothesis test?", "options": ["A method to test a claim about a population parameter", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A method to test a claim about a population parameter" },
+          { "text": "What is regression analysis?", "options": ["A method to model the relationship between variables", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A method to model the relationship between variables" },
+          { "text": "What is a confidence interval?", "options": ["A range of values that is likely to contain a population parameter", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A range of values that is likely to contain a population parameter" }
+        ]
+      },
+      {
+        "name": "Statistics",
+        "category": "medium",
+        "description": "Statistics Quiz",
+        "questions": [
+          { "text": "What is a t-test?", "options": ["A statistical test used to compare the means of two groups", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A statistical test used to compare the means of two groups" },
+          { "text": "What is ANOVA?", "options": ["Analysis of Variance", "Analysis of Variables", "Analysis of Values", "Analysis of Variances"], "correctAnswer": "Analysis of Variance" },
+          { "text": "What is a chi-square test?", "options": ["A statistical test used to compare observed and expected frequencies", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A statistical test used to compare observed and expected frequencies" },
+          { "text": "What is a normal distribution?", "options": ["A bell-shaped distribution", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A bell-shaped distribution" },
+          { "text": "What is a z-score?", "options": ["A measure of how many standard deviations a value is from the mean", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A measure of how many standard deviations a value is from the mean" },
+          { "text": "What is a confidence level?", "options": ["The probability that a confidence interval contains the true population parameter", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "The probability that a confidence interval contains the true population parameter" },
+          { "text": "What is a type I error?", "options": ["Rejecting a true null hypothesis", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "Rejecting a true null hypothesis" },
+          { "text": "What is a type II error?", "options": ["Failing to reject a false null hypothesis", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "Failing to reject a false null hypothesis" },
+          { "text": "What is a p-value?", "options": ["The probability of obtaining the observed results, assuming the null hypothesis is true", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "The probability of obtaining the observed results, assuming the null hypothesis is true" },
+          { "text": "What is a hypothesis test?", "options": ["A method to test a claim about a population parameter", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A method to test a claim about a population parameter" }
+        ]
+      },
+      {
+        "name": "Statistics",
+        "category": "hard",
+        "description": "Statistics Quiz",
+        "questions": [
+          { "text": "What is a t-test?", "options": ["A statistical test used to compare the means of two groups", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A statistical test used to compare the means of two groups" },
+          { "text": "What is ANOVA?", "options": ["Analysis of Variance", "Analysis of Variables", "Analysis of Values", "Analysis of Variances"], "correctAnswer": "Analysis of Variance" },
+          { "text": "What is a chi-square test?", "options": ["A statistical test used to compare observed and expected frequencies", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A statistical test used to compare observed and expected frequencies" },
+          { "text": "What is a normal distribution?", "options": ["A bell-shaped distribution", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A bell-shaped distribution" },
+          { "text": "What is a z-score?", "options": ["A measure of how many standard deviations a value is from the mean", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A measure of how many standard deviations a value is from the mean" },
+          { "text": "What is a confidence level?", "options": ["The probability that a confidence interval contains the true population parameter", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "The probability that a confidence interval contains the true population parameter" },
+          { "text": "What is a type I error?", "options": ["Rejecting a true null hypothesis", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "Rejecting a true null hypothesis" },
+          { "text": "What is a type II error?", "options": ["Failing to reject a false null hypothesis", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "Failing to reject a false null hypothesis" },
+          { "text": "What is a p-value?", "options": ["The probability of obtaining the observed results, assuming the null hypothesis is true", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "The probability of obtaining the observed results, assuming the null hypothesis is true" },
+          { "text": "What is a hypothesis test?", "options": ["A method to test a claim about a population parameter", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A method to test a claim about a population parameter" }
+        ]
+      },
+      {
+        "name": "Computer Fundamentals",
+        "category": "easy",
+        "description": "Computer Fundamentals Quiz",
+        "questions": [
+          { "text": "What is a CPU?", "options": ["Central Processing Unit", "Computer Processing Unit", "Central Power Unit", "Computer Power Unit"], "correctAnswer": "Central Processing Unit" },
+          { "text": "What is RAM?", "options": ["Random Access Memory", "Read Access Memory", "Random Access Module", "Read Access Module"], "correctAnswer": "Random Access Memory" },
+          { "text": "What is ROM?", "options": ["Read-Only Memory", "Random-Only Memory", "Read-Only Module", "Random-Only Module"], "correctAnswer": "Read-Only Memory" },
+          { "text": "What is a GPU?", "options": ["Graphics Processing Unit", "Graphical Processing Unit", "Graphics Power Unit", "Graphical Power Unit"], "correctAnswer": "Graphics Processing Unit" },
+          { "text": "What is an operating system?", "options": ["System software", "Application software", "Hardware", "Network protocol"], "correctAnswer": "System software" },
+          { "text": "What is a binary system?", "options": ["A system that uses 0s and 1s", "A system that uses 0s and 2s", "A system that uses 1s and 2s", "A system that uses 0s and 10s"], "correctAnswer": "A system that uses 0s and 1s" },
+          { "text": "What is a bit?", "options": ["The smallest unit of data", "A type of hardware", "A type of software", "A network protocol"], "correctAnswer": "The smallest unit of data" },
+          { "text": "What is a byte?", "options": ["8 bits", "16 bits", "32 bits", "64 bits"], "correctAnswer": "8 bits" },
+          { "text": "What is a motherboard?", "options": ["The main circuit board of a computer", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "The main circuit board of a computer" },
+          { "text": "What is a hard drive?", "options": ["A device for storing data", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A device for storing data" }
+        ]
+      },
+      {
+        "name": "Computer Fundamentals",
+        "category": "medium",
+        "description": "Computer Fundamentals Quiz",
+        "questions": [
+          { "text": "What is a cache?", "options": ["A small, fast memory that stores frequently accessed data", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A small, fast memory that stores frequently accessed data" },
+          { "text": "What is a BIOS?", "options": ["Basic Input/Output System", "Basic Input/Output Software", "Basic Input/Output Service", "Basic Input/Output Structure"], "correctAnswer": "Basic Input/Output System" },
+          { "text": "What is a firmware?", "options": ["Software embedded in hardware", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "Software embedded in hardware" },
+          { "text": "What is a peripheral device?", "options": ["A device connected to a computer", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A device connected to a computer" },
+          { "text": "What is a USB?", "options": ["Universal Serial Bus", "Universal Serial Buffer", "Universal Serial Block", "Universal Serial Bit"], "correctAnswer": "Universal Serial Bus" },
+          { "text": "What is a network interface card (NIC)?", "options": ["A hardware component that connects a computer to a network", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A hardware component that connects a computer to a network" },
+          { "text": "What is a power supply unit (PSU)?", "options": ["A device that supplies power to a computer", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A device that supplies power to a computer" },
+          { "text": "What is a heat sink?", "options": ["A device that dissipates heat from a computer component", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A device that dissipates heat from a computer component" },
+          { "text": "What is a solid-state drive (SSD)?", "options": ["A storage device that uses flash memory", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A storage device that uses flash memory" },
+          { "text": "What is a graphics card?", "options": ["A device that renders images for display", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A device that renders images for display" }
+        ]
+      },
+      {
+        "name": "Computer Fundamentals",
+        "category": "hard",
+        "description": "Computer Fundamentals Quiz",
+        "questions": [
+          { "text": "What is a RAID array?", "options": ["A group of disks that work together to improve performance or redundancy", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A group of disks that work together to improve performance or redundancy" },
+          { "text": "What is a virtual machine?", "options": ["A software emulation of a computer", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A software emulation of a computer" },
+          { "text": "What is a hypervisor?", "options": ["A software that creates and manages virtual machines", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A software that creates and manages virtual machines" },
+          { "text": "What is a cloud computing?", "options": ["A model for delivering computing services over the internet", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A model for delivering computing services over the internet" },
+          { "text": "What is a quantum computer?", "options": ["A computer that uses quantum bits (qubits)", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A computer that uses quantum bits (qubits)" },
+          { "text": "What is a supercomputer?", "options": ["A computer with extremely high processing power", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A computer with extremely high processing power" },
+          { "text": "What is a mainframe computer?", "options": ["A large, powerful computer used for critical applications", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A large, powerful computer used for critical applications" },
+          { "text": "What is a distributed system?", "options": ["A system where components are located on different networked computers", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A system where components are located on different networked computers" },
+          { "text": "What is a parallel processing?", "options": ["A method of processing where multiple tasks are executed simultaneously", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A method of processing where multiple tasks are executed simultaneously" },
+          { "text": "What is a quantum computing?", "options": ["A type of computing that uses quantum bits (qubits)", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A type of computing that uses quantum bits (qubits)" }
+        ]
+      }
+
+
+    
+  ]
