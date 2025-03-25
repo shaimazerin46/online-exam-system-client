@@ -44,7 +44,7 @@ const Features = () => {
                                     <p>No exams available for this category.</p>
                                 )}
                             </div>
-                            <Link className="text-center" to={``}>
+                            <Link className="text-center" to='/allExams'>
                                 <WebButton text={"See more"}></WebButton>
                             </Link>
                         </TabPanel>

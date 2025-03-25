@@ -11,6 +11,7 @@ import AuthLayout from './Layout/AuthLayout'
 import Login from './Pages/Login'
 import AuthProvider from './Context/AuthProvider'
 import Home from './Pages/Home'
+import AllExams from './Pages/AllExams'
 
 const queryClient = new QueryClient()
 
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
           {/* Main layout */}
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home></Home>}></Route>
+            <Route path='/allExams' element={<AllExams></AllExams>}></Route>
           </Route>
 
 

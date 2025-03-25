@@ -35,7 +35,7 @@ const Nav = () => {
   const link = <>
         <li> <NavLink to='/'>Home</NavLink>
        </li>
-        <li> <NavLink>Exams</NavLink></li>
+        <li> <NavLink to='/allExams'>Exams</NavLink></li>
   </>
 
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
