@@ -16,7 +16,7 @@ const ExamsCard = ({exam}) => {
             <p className="mb-3 text-gray-700 font-medium">Questions: {Array.isArray(questions) ? questions.length : "No questions"}</p>
             
 
-            <Link to={`exams/details/${_id}`}>
+            <Link to={`/exams/details/${_id}`}>
             <WebButton text={"Details"}></WebButton>
             </Link>
         </div>
