@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form"
 import WebButton from '../Components/WebButton/WebButton';
 import { PiEyeLight, PiEyeSlash } from 'react-icons/pi';
 import { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Context/AuthProvider';
 import SocialButton from '../Components/WebButton/SocialButton';
 import FacebookButton from '../Components/WebButton/FacebookButton';
@@ -17,7 +17,9 @@ import Swal from 'sweetalert2';
 
 const Register = () => {
     const {createUser,updateProfileUser} = useContext(AuthContext);
-    const navigate=useNavigate()
+    const navigate=useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
     
     const { register, handleSubmit, formState: { errors },reset } = useForm()
     const [showPassword,setShowPassword] = useState(false)
@@ -37,7 +39,7 @@ const Register = () => {
                                icon: "success"
                              });
                              reset()
-                           navigate('/')
+                             navigate(from, { replace: true });
                 
             }
         )

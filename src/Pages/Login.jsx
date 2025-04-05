@@ -1,44 +1,42 @@
 import Swal from 'sweetalert2';
 import Lottie from 'lottie-react';
-import loginImg from '../assets/lottie/register.json'
+import loginImg from '../assets/lottie/register.json';
 import WebButton from '../Components/WebButton/WebButton';
-import { Link, useNavigate } from 'react-router';
-import { useForm } from "react-hook-form"
+import { Link, useNavigate, useLocation } from 'react-router-dom'; // Fixed import
+import { useForm } from "react-hook-form";
 import { useContext } from 'react';
 import { AuthContext } from '../Context/AuthProvider';
 import SocialButton from '../Components/WebButton/SocialButton';
 import FacebookButton from '../Components/WebButton/FacebookButton';
 
-
-
-
-
-
-
 const Login = () => {
-    const { login } = useContext(AuthContext)
+    const { login } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
    
     const onSubmit = (data) => {
-
-        const email = data.email;
-        const password = data.password;
+        const { email, password } = data;
 
         login(email, password)
-
-        .then(()=>{
-            Swal.fire({
-                title: "Good job!",
-                text: "Successfully logged in!",
-                icon: "success"
-              });
-              reset()
-            navigate('/')
-        })
-
-
-    }
+            .then(() => {
+                Swal.fire({
+                    title: "Success!",
+                    text: "You've logged in successfully",
+                    icon: "success"
+                });
+                reset();
+                navigate(from, { replace: true });
+            })
+            .catch(err => {  // Changed from .error to .catch
+                Swal.fire({
+                    title: "Error!",
+                    text: err.message || "Login failed",
+                    icon: "error"
+                });
+            });
+    };
     return (
         <div>
             <div

@@ -76,7 +76,9 @@ const ExamDetails = () => {
         // Send the score data to the server
         axiosPublic
             .post('/results', data)
-            .then((res) => console.log(res.data))
+            .then(() => {
+               
+    })
             .catch((err) => console.error('Error submitting results:', err));
     };
 
