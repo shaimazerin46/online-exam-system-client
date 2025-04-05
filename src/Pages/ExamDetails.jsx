@@ -2,14 +2,16 @@ import { useParams } from "react-router";
 import useExam from "../hooks/useExam";
 import { Radio, RadioGroup, FormControlLabel, FormControl, Button, Typography, Box } from "@mui/material";
 import { useState, useEffect } from "react";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 const ExamDetails = () => {
+    const axiosPublic = useAxiosPublic();
     const { id } = useParams();
     const [exams] = useExam();
     const filteredExam = exams?.find(exam => exam?._id === id);
 
     const [selectedAnswers, setSelectedAnswers] = useState({});
-    const [isAnswered, setIsAnswered] = useState([]);
+    const [isAnswered, setIsAnswered] = useState([]);  
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [score, setScore] = useState({ correct: 0, wrong: 0 });
 
@@ -57,7 +59,24 @@ const ExamDetails = () => {
     const handleSubmit = () => {
         setIsAnswered(new Array(questions.length).fill(true));
         setIsSubmitted(true);
-        setScore(calculateScore());
+    
+        // Calculate the score directly when submitting
+        const { correct, wrong } = calculateScore();
+    
+        // Set the score directly instead of using the state
+        setScore({ correct, wrong });
+    
+        const data = {
+            correct: correct,
+            wrong: wrong,
+            marks: correct / questions.length, // Calculate marks based on correct answers
+        };
+    
+        // Send the score data to the server
+        axiosPublic
+            .post('/results', data)
+            .then((res) => console.log(res.data))
+            .catch((err) => console.error('Error submitting results:', err));
     };
 
     const getRadioColor = (option, questionIndex) => {
@@ -73,7 +92,7 @@ const ExamDetails = () => {
 
     return (
         <div className="mt-40 max-w-7xl mx-auto space-y-7">
-            <img src={image} alt="exam" className="w-full h-[400px] object-cover" />
+            <img src={image} alt="exam" className="w-full h-[350px] object-cover" />
             <h3 className="text-center font-bold text-xl">{description}</h3>
             <div className="flex justify-between font-bold">
                 <h3>Title: {name}</h3>
