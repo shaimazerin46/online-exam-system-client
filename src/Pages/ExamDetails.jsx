@@ -69,7 +69,8 @@ const ExamDetails = () => {
         const data = {
             correct: correct,
             wrong: wrong,
-            marks: correct / questions.length, // Calculate marks based on correct answers
+            marks: correct / questions.length, 
+            date: new Date().toUTCString()
         };
     
         // Send the score data to the server
