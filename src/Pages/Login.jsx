@@ -63,7 +63,7 @@ const Login = () => {
                 className='md:min-h-screen flex items-center'
             >
 
-                <div className='md:w-[800px] mt-30 rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7 flex-col md:flex-row'>
+                <div className='md:w-[800px] mt-40 mb-20 rounded-2xl bg-white  flex items-center mx-auto shadow-2xl p-7 flex-col md:flex-row'>
 
                     {/* animation */}
 
