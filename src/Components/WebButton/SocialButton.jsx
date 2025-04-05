@@ -1,16 +1,23 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider';
 import { useNavigate } from 'react-router';
+import Swal from 'sweetalert2';
+
 
 const SocialButton = () => {
-    const {googleLogin} = useContext(AuthContext);
-    const navigate=useNavigate()
-    const handleGoogleLogin=()=>{
+    const { googleLogin } = useContext(AuthContext);
+    const navigate = useNavigate()
+    const handleGoogleLogin = () => {
         googleLogin()
-        .then(()=>{
-            console.log('google')
-            navigate('/')
-        })
+            .then(() => {
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Successfully sign in!",
+                    icon: "success"
+                });
+
+                navigate('/')
+            })
     }
     return (
         <div>

@@ -8,7 +8,9 @@ import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Context/AuthProvider';
 import SocialButton from '../Components/WebButton/SocialButton';
 import FacebookButton from '../Components/WebButton/FacebookButton';
-import toast from 'react-hot-toast';
+import Swal from 'sweetalert2';
+
+
 
 
 
@@ -29,37 +31,13 @@ const Register = () => {
         .then(()=>
             {
                 updateProfileUser(name,photo)
-                .then(()=>{
-                    toast('Successfully registered!!', {
-                        duration: 4000,
-                        position: 'top-center',
-                      
-                        // Styling
-                        style: {},
-                        className: '',
-                      
-                        // Custom Icon
-                        icon: '👏',
-                      
-                        // Change colors of success/error/loading icon
-                        iconTheme: {
-                          primary: '#000',
-                          secondary: '#fff',
-                        },
-                      
-                        // Aria
-                        ariaProps: {
-                          role: 'status',
-                          'aria-live': 'polite',
-                        },
-                      
-                        // Additional Configuration
-                        removeDelay: 1000,
-                      });
-                       
-                      setTimeout(() => navigate('/'), 2000);
-                      reset()
-                })
+                Swal.fire({
+                               title: "Good job!",
+                               text: "Successfully registered!",
+                               icon: "success"
+                             });
+                             reset()
+                           navigate('/')
                 
             }
         )

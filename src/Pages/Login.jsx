@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 import Lottie from 'lottie-react';
 import loginImg from '../assets/lottie/register.json'
 import WebButton from '../Components/WebButton/WebButton';
@@ -7,7 +8,10 @@ import { useContext } from 'react';
 import { AuthContext } from '../Context/AuthProvider';
 import SocialButton from '../Components/WebButton/SocialButton';
 import FacebookButton from '../Components/WebButton/FacebookButton';
-import toast from 'react-hot-toast';
+
+
+
+
 
 
 
@@ -15,6 +19,7 @@ const Login = () => {
     const { login } = useContext(AuthContext)
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const navigate = useNavigate()
+   
     const onSubmit = (data) => {
 
         const email = data.email;
@@ -22,37 +27,15 @@ const Login = () => {
 
         login(email, password)
 
-            .then(() => {
-                toast('Successfully logged in!!', {
-                    duration: 4000,
-                    position: 'top-center',
-                  
-                    // Styling
-                    style: {},
-                    className: '',
-                  
-                    // Custom Icon
-                    icon: '👏',
-                  
-                    // Change colors of success/error/loading icon
-                    iconTheme: {
-                      primary: '#000',
-                      secondary: '#fff',
-                    },
-                  
-                    // Aria
-                    ariaProps: {
-                      role: 'status',
-                      'aria-live': 'polite',
-                    },
-                  
-                    // Additional Configuration
-                    removeDelay: 1000,
-                  });
-                   
-                  setTimeout(() => navigate('/'), 2000);
-                  reset()
-            })
+        .then(()=>{
+            Swal.fire({
+                title: "Good job!",
+                text: "Successfully logged in!",
+                icon: "success"
+              });
+              reset()
+            navigate('/')
+        })
 
 
     }

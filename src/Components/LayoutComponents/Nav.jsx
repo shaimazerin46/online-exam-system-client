@@ -16,6 +16,7 @@ import { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
 import WebButton from "../WebButton/WebButton";
 import { AuthContext } from "../../Context/AuthProvider";
+import Swal from "sweetalert2";
 
 
 
@@ -28,6 +29,11 @@ const Nav = () => {
   const handlelogout = ()=>{
     logout()
     .then(()=>{
+      Swal.fire({
+                      title: "Good job!",
+                      text: "Successfully logged out!",
+                      icon: "success"
+                    });
       navigate('/auth')
     })
   }
