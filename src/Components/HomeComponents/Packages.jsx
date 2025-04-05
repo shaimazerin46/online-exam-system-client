@@ -21,13 +21,13 @@ const Packages = () => {
             <Headline text={"Packages"}></Headline>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {packages?.map(p => (
-                    <div key={p._id} className="w-96 shadow-xl h-full flex flex-col bg-gradient-to-b from-[#98D2C0] rounded-2xl to-[#F6F8D5]">
+                    <div key={p._id} className="w-96 transition-transform duration-300 hover:scale-105 shadow-xl h-full flex flex-col bg-gradient-to-b from-[#98D2C0] rounded-2xl to-[#F6F8D5]">
                         <h3 className="py-3 bg-[#3b997b] rounded-t-2xl text-white text-center">{p?.name}</h3>
                         <div className="p-5 flex flex-col grow ">
-                           <div className="flex items-center justify-between">
+                           <div className="flex items-center">
                            <div className="flex items-center h-25 w-25 rounded-full bg-gradient-to-r text-white from-yellow-500 to-yellow-300 shadow-lg justify-center">
                                 <span>BDT {p?.price}</span>
-                            </div><span className="ml-3 py-2 px-3 bg-green-200 text-sm border-[1px] border-green-300 rounded-3xl text-black ">Month</span>
+                            </div><span className="ml-3 ">/Month</span>
                            </div>
                             <ul className="mt-5">
                                 {
