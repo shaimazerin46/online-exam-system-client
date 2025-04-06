@@ -9,8 +9,6 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import logo from '../../assets/logo.png'
 import { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
@@ -42,6 +40,7 @@ const Nav = () => {
         <li> <NavLink to='/'>Home</NavLink>
        </li>
         <li> <NavLink to='/allExams'>Exams</NavLink></li>
+        <li><NavLink to='/cqTest'>CQ test</NavLink></li>
   </>
 
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
@@ -129,7 +128,7 @@ const Nav = () => {
             user ?   <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src={user.photoURL} />
+                <Avatar alt="" src={user.photoURL} />
               </IconButton>
             </Tooltip>
             <Menu
@@ -142,9 +141,9 @@ const Nav = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <div className="px-2 text-center rounded-xl">
+              <div className="px-2 text-center rounded-xl w-[250px]">
              <div className="p-3 rounded-xl bg-blue-200">
-             <Avatar alt="Remy Sharp" src={user.photoURL} className="mx-auto"/>
+             <Avatar alt="" src={user.photoURL} className="mx-auto"/>
               <p className="text-sm">{user.displayName}</p>
               <p className="text-sm text-gray-500"> {user.email}</p>
              </div>

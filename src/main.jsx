@@ -14,6 +14,7 @@ import Home from './Pages/Home'
 import AllExams from './Pages/AllExams'
 import ExamDetails from './Pages/ExamDetails'
 import PrivateRoute from './PrivateRoute/PrivateRoute'
+import CqTest from './Pages/CqTest'
 
 const queryClient = new QueryClient()
 
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')).render(
             <Route index element={<Home></Home>}></Route>
             <Route path='/allExams' element={<AllExams></AllExams>}></Route>
             <Route path='/exams/details/:id' element={<PrivateRoute><ExamDetails></ExamDetails></PrivateRoute>}></Route>
+            <Route path='/cqTest' element={<PrivateRoute><CqTest></CqTest></PrivateRoute>}></Route>
           </Route>
 
 

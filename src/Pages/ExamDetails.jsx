@@ -126,12 +126,13 @@ const ExamDetails = () => {
                 </Box>
             )}
 
-            <div className="w-[600px] mx-auto">
+            <div className="w-[600px] mx-auto ">
                 {questions.map((question, questionIndex) => (
                     <div key={questionIndex} className="mb-6 p-4 border border-gray-300 rounded-md">
-                        <h4 className="font-semibold text-lg">{question.text}</h4>
+                        <h4 className="font-semibold">{question.text}</h4>
                         <FormControl component="fieldset" className="mt-4 space-y-3">
                             <RadioGroup
+                           
                                 value={selectedAnswers[questionIndex] || ""}
                                 onChange={(e) => handleAnswerChange(e, questionIndex)}
                                 disabled={isAnswered[questionIndex]}
@@ -145,7 +146,8 @@ const ExamDetails = () => {
                                                 color: getRadioColor(option, questionIndex),
                                                 '&.Mui-checked': {
                                                     color: getRadioColor(option, questionIndex),
-                                                }
+                                                },
+                                            
                                             }} 
                                         />}
                                         label={option}

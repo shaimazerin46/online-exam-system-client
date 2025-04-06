@@ -1,0 +1,104 @@
+[
+    {
+      "name": "Artificial Intelligence",
+      "category": "hard",
+      "image": "https://i.ibb.co.com/KpK4WSt2/ai-generated-7770055-640.jpg",
+      "description": "Artificial Intelligence involves machines performing tasks that typically require human intelligence.",
+      "questions": [
+        { "question": "What is the Turing Test?", "marks": 5 },
+        { "question": "Differentiate between supervised and unsupervised learning.", "marks": 10 }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "category": "hard",
+      "image": "https://i.ibb.co.com/vC0qWDJ4/technology-3389888-640.jpg",
+      "description": "Machine Learning enables systems to learn and improve from experience without being explicitly programmed.",
+      "questions": [
+        { "question": "Explain overfitting and how to prevent it.", "marks": 10 },
+        { "question": "What is a confusion matrix?", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Operating System",
+      "category": "medium",
+      "image": "https://i.ibb.co.com/cXKgL1Zf/artificial-intelligence-2167835-640.jpg",
+      "description": "An Operating System manages computer hardware and software resources and provides services for programs.",
+      "questions": [
+        { "question": "Explain the concept of process scheduling.", "marks": 10 },
+        { "question": "What is a deadlock and how can it be avoided?", "marks": 10 }
+      ]
+    },
+    {
+      "name": "Database Management System",
+      "category": "medium",
+      "image": "https://i.ibb.co.com/PZpfYhWc/computer-2583383-640.jpg",
+      "description": "A DBMS provides an interface for users to create, retrieve, update, and manage data efficiently.",
+      "questions": [
+        { "question": "Define normalization and its types.", "marks": 10 },
+        { "question": "What are the ACID properties in DBMS?", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Web Development",
+      "category": "easy",
+      "image": "https://i.ibb.co.com/LbwxMRV/macbook-926558-640.jpg",
+      "description": "Web Development involves building and maintaining websites using frontend and backend technologies.",
+      "questions": [
+        { "question": "What is the difference between HTML and CSS?", "marks": 5 },
+        { "question": "Explain the purpose of JavaScript in web development.", "marks": 5 },
+        { "question": "What is responsive design?", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Networking",
+      "category": "medium",
+      "image": "https://i.ibb.co.com/jP1gVRCq/technology-7111795-640.jpg",
+      "description": "Networking involves connecting computers and devices to share resources and information.",
+      "questions": [
+        { "question": "Explain the OSI model and its layers.", "marks": 10 },
+        { "question": "What is the difference between TCP and UDP?", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Pattern Recognition",
+      "category": "hard",
+      "image": "https://i.ibb.co.com/YT4SZdjK/cyber-brain-7633488-640.jpg",
+      "description": "Pattern Recognition is the automated recognition of patterns and regularities in data.",
+      "questions": [
+        { "question": "What is supervised pattern recognition?", "marks": 5 },
+        { "question": "Explain feature extraction in pattern recognition.", "marks": 10 }
+      ]
+    },
+    {
+      "name": "Neural Network",
+      "category": "hard",
+      "image": "https://i.ibb.co.com/67ShgYGg/technology-7111799-640.jpg",
+      "description": "Neural Networks are computing systems inspired by biological neural networks that learn to perform tasks.",
+      "questions": [
+        { "question": "Describe the architecture of a basic neural network.", "marks": 10 },
+        { "question": "What is backpropagation?", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "category": "medium",
+      "image": "https://i.ibb.co.com/bq3Xbfy/technology-3435575-640.jpg",
+      "description": "Statistics is the study of data collection, analysis, interpretation, presentation, and organization.",
+      "questions": [
+        { "question": "What is the difference between mean, median, and mode?", "marks": 5 },
+        { "question": "Explain the concept of standard deviation.", "marks": 5 }
+      ]
+    },
+    {
+      "name": "Computer Fundamentals",
+      "category": "easy",
+      "image": "https://i.ibb.co.com/wFpTXbgV/apple-606761-640.jpg",
+      "description": "Computer Fundamentals cover the basic concepts of computing, hardware, software, and their applications.",
+      "questions": [
+        { "question": "What are the basic components of a computer?", "marks": 5 },
+        { "question": "Differentiate between RAM and ROM.", "marks": 5 }
+      ]
+    }
+  ]
+  

@@ -9,6 +9,7 @@ import { AuthContext } from '../Context/AuthProvider';
 import SocialButton from '../Components/WebButton/SocialButton';
 import FacebookButton from '../Components/WebButton/FacebookButton';
 import Swal from 'sweetalert2';
+import useAxiosPublic from '../hooks/useAxiosPublic';
 
 
 
@@ -20,6 +21,7 @@ const Register = () => {
     const navigate=useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
+    const axiosPublic = useAxiosPublic()
     
     const { register, handleSubmit, formState: { errors },reset } = useForm()
     const [showPassword,setShowPassword] = useState(false)
@@ -32,17 +34,39 @@ const Register = () => {
         createUser(email,password)
         .then(()=>
             {
-                updateProfileUser(name,photo)
-                Swal.fire({
-                               title: "Good job!",
-                               text: "Successfully registered!",
-                               icon: "success"
-                             });
-                             reset()
-                             navigate(from, { replace: true });
-                
-            }
+                updateProfileUser(name,photo);
+                const userInfo = {
+                    name: data.name,
+                    email: data.email,
+                    badge: 'bronze',
+                    date: new Date().toUTCString()
+                }
+                axiosPublic.post('/users',userInfo)
+                .then((res=>{
+                    if(res.data.insertedId){
+                        Swal.fire({
+                            title: "Good job!",
+                            text: "Successfully registered!",
+                            icon: "success"
+                          });
+                          reset();
+                          navigate(from, { replace: true });
+                    }
+                    
+            }))
+               
+                 
+     
+ }
         )
+
+        .catch((error)=>{
+            Swal.fire({
+                icon: "error",
+                text: (error.message),
+                footer: '<a href="#">Why do I have this issue?</a>'
+              });
+        })
     }
     return (
         <div
