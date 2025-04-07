@@ -4,6 +4,7 @@
 
 body{
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    background-color: white;
 }
 .font-text{
     font-family: "Yrsa", serif;
@@ -17,8 +18,22 @@ body{
 .light-color{
     color: #98D2C0;
 }
+  .banner-box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .banner-div:hover .banner-box {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .wave svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
-  
-  
-  
   

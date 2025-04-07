@@ -7,10 +7,16 @@ import Packages from "../Components/HomeComponents/Packages";
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <About></About>
-            <Features></Features>
-            <Packages></Packages>
+            <div >
+                <Banner />
+            </div>
+
+            
+            <div> 
+                <About />
+                <Features />
+                <Packages />
+            </div>
         </div>
     );
 };

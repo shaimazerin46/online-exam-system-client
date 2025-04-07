@@ -1,74 +1,61 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import img1 from '../../assets/banner/banner1.jpg'
-import img2 from '../../assets/banner/banner2.jpg'
-import img3 from '../../assets/banner/banner3.jpg'
-import img4 from '../../assets/banner/banner4.jpg'
-import img5 from '../../assets/banner/banner5.jpg'
-import img6 from '../../assets/banner/banner6.jpg'
-
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import img1 from '../../assets/banner/banner1.jpg';
+import img2 from '../../assets/banner/banner2.jpg';
+import img3 from '../../assets/banner/banner3.jpg';
+import img4 from '../../assets/banner/banner4.jpg';
+import img5 from '../../assets/banner/banner5.jpg';
+import img6 from '../../assets/banner/banner6.jpg';
 
 const Banner = () => {
-    return (
-      <div>
-       <Carousel autoPlay interval={1000} infiniteLoop showArrows={false}>
-         <div className="relative">
-         <img src={img1} alt=""/>
-         <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
-           
-         Empower Your Learning Journey — Anytime, Anywhere!
-           
-         </p>
-         </div>
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
 
-         <div className="relative">
-            <img src={img2} alt=""/>
-            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
-           
-            Ace Your Exams — Online, Hassle-Free, and Fast!
-          
-        </p>
-         </div>
+  const slides = [img1, img2, img3, img4, img5, img6];
 
-         <div className="relative"> 
-            <img src={img3} alt=""/>
-            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
-           
-            An easy, secure, and reliable way to take your tests online.
-           
-         </p>
-         </div>
+  return (
+    <div className="w-full  mt-20">
+      <Slider {...settings}>
+        {slides.map((img, index) => (
+          <div key={index}>
+            <div
+              className="relative banner-div h-[550px]"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${img})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                color: "white",
+              }}
+            >
+              {/* Bottom Border & Text Content */}
+              <div className="absolute bottom-0 w-full  banner-box ">
+                <div className="">
+                  <div className="bg-black opacity-50 h-[300px] text-center py-6 flex items-center">
+                    <div className="text-white space-y-7 w-[90%] md:w-[600px] mx-auto">
+                      <h3 className="font-bold">Ace Your Exams Anytime, Anywhere</h3>
+                      <p className="text-sm">
+                        Join our secure and user-friendly platform to take exams online with ease and confidence.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-         <div className="relative">
-            <img src={img4} alt=""/>
-            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
-           
-            Ready, Set, Succeed — Your Exams, Simplified!
-          
-        </p>
-         </div>
-
-         <div className="relative">
-            <img src={img5} alt=""/>
-            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
-           
-            Next-Gen Online Exams — Redefining the Way You Test!
-           
-         </p>
-         </div>
-
-         <div className="relative">
-            <img src={img6} alt=""/>
-            <p className="absolute font-text text-left px-3 bottom-60 w-[700px] text-white text-7xl font-bold">
-           
-            Empower Your Learning Journey - Anytime, Anywhere
-           
-         </p>
-         </div>
-       </Carousel>
-      </div>
-    );
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
 export default Banner;

@@ -15,6 +15,7 @@ import AllExams from './Pages/AllExams'
 import ExamDetails from './Pages/ExamDetails'
 import PrivateRoute from './PrivateRoute/PrivateRoute'
 import CqTest from './Pages/CqTest'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 const queryClient = new QueryClient()
 
@@ -22,7 +23,8 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <AuthProvider>
       <QueryClientProvider client={queryClient}>
-        <Routes>
+       <ParallaxProvider>
+       <Routes>
           {/* Main layout */}
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home></Home>}></Route>
@@ -40,6 +42,7 @@ createRoot(document.getElementById('root')).render(
 
         </Routes>
 
+       </ParallaxProvider>
 
 
       </QueryClientProvider>
