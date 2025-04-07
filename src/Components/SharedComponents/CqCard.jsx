@@ -19,7 +19,7 @@ const CqCard = ({exam}) => {
 </p>
             
 
-            <Link to={``}>
+            <Link to={`/cqDetails/${_id}`}>
             <WebButton text={"Details"}></WebButton>
             </Link>
         </div>
