@@ -3,6 +3,7 @@ import Headline from "../Components/Headline/Headline";
 import { useEffect, useState } from "react";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import WebButton from "../Components/WebButton/WebButton";
+import Swal from "sweetalert2";
 
 
 const CqDetails = () => {
@@ -26,21 +27,41 @@ const CqDetails = () => {
 
     const { image, name, category, description, questions, _id } = filterExam;
 
-    const handleFileSubmit = (questionIdx, e)=>{
+    const handleFileSubmit = (questionIdx, e) => {
         const file = e.target.files[0];
-        if(file){
-            setAnswers((prev)=>({
+        if (file) {
+            setAnswers((prev) => ({
                 ...prev,
-                [questionIdx]: file,
-                questionText: questions[questionIdx].question
-            }))
+                [questionIdx]: {
+                    file
+                },
+            }));
         }
-    }
+    };
 
 
-    const handleSubmit = ()=>{
-        console.log(answers)
-    }
+    const handleSubmit = () => {
+        const formData = new FormData();
+    
+        formData.append('examId', _id);
+        formData.append('examName', name);
+    
+        Object.entries(answers).forEach(([index, answerData]) => {
+            formData.append(`answers[${index}][file]`, answerData.file);
+        });
+    
+        axiosPublic.post('/pdf', formData)
+            .then(() => {
+               
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Submitted answer",
+                    icon: "success"
+                  });
+               
+            })
+            .catch(err => console.error(err.message));
+    }; 
     return (
         <div className="py-20 max-w-7xl mx-auto space-y-7">
             <img src={image} alt="" className="w-full h-[350px] object-cover" />
