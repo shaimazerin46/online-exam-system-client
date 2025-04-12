@@ -26,12 +26,12 @@ const About = () => {
 
            {/* images */}
 
-           <div className='relative animate-pulse h-[200px] mx-auto w-[200px] rounded-full border-[1px] border-[#4F959D]'>
-               <div className='absolute animate-pulse transform translate-x-3/4 -translate-y-1/4'>
-                   <img src={about1} alt="" className='w-[180px] object-cover rounded-3xl'/>
+           <div className='relative animate-pulse animation-delay-500 h-[400px] mx-auto w-[400px] rounded-full border-[1px] border-[#4F959D]'>
+               <div className='absolute animate-pulse transform translate-x-4/5 -translate-y-1/4 animation-delay-1000'>
+                   <img src={about1} alt="" className='w-[300px] object-cover rounded-3xl'/>
                </div>
-               <div className='absolute animate-pulse transform translate-y-[120px] translate-x-[50px]'>
-               <img src={about2} alt="" className='w-[200px]  object-cover rounded-3xl'/>
+               <div className='absolute animate-pulse animation-delay-2000 transform translate-y-[200px] translate-x-[100px]'>
+               <img src={about2} alt="" className='w-[350px]  object-cover rounded-3xl'/>
                </div>
            </div>
 

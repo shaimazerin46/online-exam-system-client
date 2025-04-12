@@ -6,6 +6,7 @@ import WebButton from "../WebButton/WebButton";
 import { useContext, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { AuthContext } from "../../Context/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const MailSection = () => {
@@ -26,8 +27,20 @@ const MailSection = () => {
             data,
             'Q0wGHAYPZtgl_MkzK'
         )
-        .then(res=>console.log(res.text))
-        .catch(err=>console.log(err.text))
+        .then(()=>{
+            Swal.fire({
+                
+                text: "your message is sent!",
+                icon: "success"
+              });
+            setMessage('')
+        })
+        .catch(err=>{
+            Swal.fire({
+                icon: "error",
+                text: (err.message),
+              });
+        })
     }
     return (
         <div className="max-w-7xl mx-auto">
@@ -37,7 +50,7 @@ const MailSection = () => {
                 
                    
                    
-                    <textarea required name="text" value={message} onChange={(e) => setMessage(e.target.value)} className="textarea resize-none w-full rounded-l-3xl rounded-r-3xl focus:outline-0 focus:border-0 border-0 shadow-2xl" placeholder="Enter your message"></textarea><br/><br/>
+                    <textarea required name="text" value={message} onChange={(e) => setMessage(e.target.value)} className="textarea h-32 resize-none w-full rounded-l-3xl rounded-r-3xl focus:outline-0 focus:border-0 border-0 shadow-2xl" placeholder="Enter your message"></textarea><br/><br/>
 
                     <div onClick={handleSubmit} className="flex justify-center">
                     <WebButton text={"Send"}></WebButton>

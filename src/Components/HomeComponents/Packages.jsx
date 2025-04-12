@@ -16,7 +16,6 @@ const Packages = () => {
         axiosPublic.get('/allPackages')
             .then(res => {
                 setapackages(res.data);
-                console.log(packages)
             })
     }, [])
     return (
