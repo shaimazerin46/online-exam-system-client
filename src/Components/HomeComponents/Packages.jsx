@@ -3,7 +3,7 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 import Headline from "../Headline/Headline";
 import { Link } from "react-router";
 import WebButton from "../WebButton/WebButton";
-import { Parallax } from "react-scroll-parallax";
+
 import bg from '../../assets/subscription/bg.jpg'
 
 
@@ -20,12 +20,10 @@ const Packages = () => {
             })
     }, [])
     return (
-      <Parallax  translateY={[-20, 20]} speed={-5} className="mt-30">
-        
 
 <div className="">
             <Headline text={"Packages"}></Headline>
-            <div className="grid max-w-7xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
+            <div className="grid max-w-7xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {packages?.map(p => (
                     <div key={p._id}
                     style={{background: `url(${bg})`}}
@@ -59,7 +57,7 @@ const Packages = () => {
             </div>
            
         </div>
-      </Parallax>
+      
     );
 };
 

@@ -1,6 +1,8 @@
+
 import About from "../Components/HomeComponents/About";
 import Banner from "../Components/HomeComponents/Banner";
 import Features from "../Components/HomeComponents/Features";
+import MailSection from "../Components/HomeComponents/MailSection";
 import Packages from "../Components/HomeComponents/Packages";
 
 
@@ -16,6 +18,7 @@ const Home = () => {
                 <About />
                 <Features />
                 <Packages />
+                <MailSection></MailSection>
             </div>
         </div>
     );
