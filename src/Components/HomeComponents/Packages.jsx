@@ -45,7 +45,7 @@ const Packages = () => {
                             </ul>
 
                         </div>
-                        <Link className="text-center pb-5">
+                        <Link to={`/packages/${p._id}`} className="text-center pb-5">
                             <WebButton text={"Subscribe"}></WebButton>
                         </Link>
                         </div>

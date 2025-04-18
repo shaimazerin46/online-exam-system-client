@@ -38,7 +38,7 @@ const Register = () => {
                 const userInfo = {
                     name: data.name,
                     email: data.email,
-                    badge: 'bronze',
+                    badge: 'none',
                     date: new Date().toUTCString()
                 }
                 axiosPublic.post('/users',userInfo)
