@@ -26,9 +26,9 @@ const ExamDetails = () => {
 
     if (!filteredExam) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <p className="text-gray-500 text-lg">Loading exam details...</p>
-            </div>
+            <div className="h-screen flex justify-center items-center">
+            <span className="loading loading-bars loading-lg text-warning"></span>
+        </div>
         );
     }
 

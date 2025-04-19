@@ -16,7 +16,6 @@ const AllExams = () => {
         .then(res=>setExams(res.data))
     },[search,category])
 
-    console.log(exams)
 
     return (
         <div className="py-20 max-w-7xl mx-auto ">

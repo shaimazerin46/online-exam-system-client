@@ -4,60 +4,53 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { IoHeart } from "react-icons/io5";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import Swal from "sweetalert2";
-import { useEffect, useState } from "react";
+import useWishlist from "../../hooks/useWishlist";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../Context/AuthProvider";
 
 const CqCard = ({ exam }) => {
     const { name, description, questions, image, category, _id } = exam;
     const axiosPublic = useAxiosPublic();
-    const [isWishlisted, setIsWishlisted] = useState(false);
-    const [wishlistedData, setWishlistedData] = useState([]);
+    const [wishlistItems, refetch] = useWishlist();
+    const [localWishlist, setLocalWishlist] = useState([]);
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
-        axiosPublic.get('/wishlist')
-            .then(res => {
-                setWishlistedData(res.data);
-               
-                const isInWishlist = res.data.some(item => item.id === _id);
-                setIsWishlisted(isInWishlist);
-            })
-            .catch(error => {
-                console.error("Error fetching wishlist:", error);
-            });
-    }, [_id, axiosPublic]);
+        setLocalWishlist(wishlistItems);
+    }, []);
+
+    const isWishlisted = localWishlist?.some(item => item.id === _id);
 
     const handleWishlist = (id) => {
-        const wishlisted = wishlistedData.find(w => w.id === id);
+        const wishlisted = localWishlist?.find(w => w.id === id);
         
         if (wishlisted) {
-            axiosPublic.delete(`/wishlist/${id}`)
+            axiosPublic.delete(`/wishlist/${wishlisted._id}`)
                 .then(res => {
                     if (res.data.deletedCount > 0) {
-                        setIsWishlisted(false);
-                        
-                        setWishlistedData(prev => prev.filter(item => item.id !== id));
+                        setLocalWishlist(prev => prev.filter(item => item.id !== id));
+                        Swal.fire("Removed!", "Removed from wishlist", "info");
+                        refetch();
                     }
                 })
                 .catch(error => {
-                    Swal.fire({
-                        icon: "error",
-                        text: error.message,
-                    });
+                    Swal.fire("Error", error.message, "error");
                 });
         } else {
             const data = {
-                id: id
+                id,
+                email: user?.email
             };
             axiosPublic.post('/wishlist', data)
                 .then(res => {
                     if (res.data.insertedId) {
-                        setIsWishlisted(true);
-                        // Update local wishlist data
-                        setWishlistedData(prev => [...prev, data]);
+                        setLocalWishlist(prev => [...prev, { id }]);
                         Swal.fire({
                             title: "Good job!",
                             text: "Added to wishlist",
                             icon: "success"
                         });
+                        refetch();
                     }
                 })
                 .catch(error => {
@@ -85,7 +78,7 @@ const CqCard = ({ exam }) => {
 
                 <div className="flex gap-5">
                     <Link to={`/cqDetails/${_id}`}>
-                        <WebButton text={"Details"}></WebButton>
+                        <WebButton text={"Details"} />
                     </Link>
 
                     <button onClick={() => handleWishlist(_id)} className="text-xl text-red-500">
