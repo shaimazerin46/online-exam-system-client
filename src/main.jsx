@@ -18,6 +18,9 @@ import CqTest from './Pages/CqTest'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import CqDetails from './Pages/CqDetails'
 import PackageDetail from './Pages/PackageDetail'
+import Session from './Pages/Session'
+import SessionRoute from './PrivateRoute/SessionRoute'
+import WishlistPage from './Pages/WishlistPage'
 
 const queryClient = new QueryClient()
 
@@ -35,6 +38,8 @@ createRoot(document.getElementById('root')).render(
             <Route path='/cqTest' element={<PrivateRoute><CqTest></CqTest></PrivateRoute>}></Route>
             <Route path='/cqDetails/:id' element={<PrivateRoute><CqDetails></CqDetails></PrivateRoute>}></Route>
             <Route path='/packages/:id' element={<PrivateRoute><PackageDetail></PackageDetail></PrivateRoute>}></Route>
+            <Route path='/session' element={<SessionRoute><Session></Session></SessionRoute>}></Route>
+            <Route path='/wishlist' element={<PrivateRoute><WishlistPage></WishlistPage></PrivateRoute>}></Route>
           </Route>
 
 

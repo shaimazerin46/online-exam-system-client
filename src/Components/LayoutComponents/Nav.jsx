@@ -15,6 +15,7 @@ import { NavLink, useNavigate } from "react-router";
 import WebButton from "../WebButton/WebButton";
 import { AuthContext } from "../../Context/AuthProvider";
 import Swal from "sweetalert2";
+import { IoHeart } from "react-icons/io5";
 
 
 
@@ -41,6 +42,8 @@ const Nav = () => {
        </li>
         <li> <NavLink to='/allExams'>Exams</NavLink></li>
         <li><NavLink to='/cqTest'>CQ test</NavLink></li>
+        <li><NavLink to='/session'>Support</NavLink></li>
+        <li ><NavLink className="flex items-center" to='/wishlist'><span></span>Wishlist<span className="text-xl text-red-500"><IoHeart /></span></NavLink></li>
   </>
 
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);

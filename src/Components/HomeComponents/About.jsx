@@ -26,7 +26,7 @@ const About = () => {
 
            {/* images */}
 
-           <div className='relative animate-pulse animation-delay-500 h-[400px] mx-auto w-[400px] rounded-full border-[1px] border-[#4F959D]'>
+           <div className='relative animate-pulse animation-delay-500 h-[400px]  w-[400px] rounded-full border-[1px] border-[#4F959D]'>
                <div className='absolute animate-pulse transform translate-x-4/5 -translate-y-1/4 animation-delay-1000'>
                    <img src={about1} alt="" className='w-[300px] object-cover rounded-3xl'/>
                </div>

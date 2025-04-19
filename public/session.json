@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to Machine Learning",
+      "description": "Basic concepts and real-life applications of Machine Learning.",
+      "speaker": "Shahriar Hossain",
+      "scheduledTime": "9:00 AM",
+      "durationMinutes": 45
+    },
+    {
+      "id": 2,
+      "title": "Artificial Intelligence: Present and Future",
+      "description": "Discussion on the evolution of AI and its future potential.",
+      "speaker": "Farzana Akter",
+      "scheduledTime": "9:50 AM",
+      "durationMinutes": 40
+    },
+    {
+      "id": 3,
+      "title": "Computer Fundamentals for Beginners",
+      "description": "Covering the basics of computer hardware and software.",
+      "speaker": "Md. Rakibul Islam",
+      "scheduledTime": "10:30 AM",
+      "durationMinutes": 30
+    },
+    {
+      "id": 4,
+      "title": "Understanding Operating Systems",
+      "description": "An overview of operating systems, processes, and memory management.",
+      "speaker": "Jannatul Ferdous",
+      "scheduledTime": "11:00 AM",
+      "durationMinutes": 45
+    },
+    {
+      "id": 5,
+      "title": "Live Q&A and Discussion",
+      "description": "Open session for asking questions and sharing thoughts.",
+      "speaker": "All Participants",
+      "scheduledTime": "11:50 AM",
+      "durationMinutes": 120
+    }
+  ]
+  
