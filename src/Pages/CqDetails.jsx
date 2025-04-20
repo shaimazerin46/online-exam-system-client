@@ -1,13 +1,15 @@
 import { useParams } from "react-router";
 import Headline from "../Components/Headline/Headline";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import WebButton from "../Components/WebButton/WebButton";
 import Swal from "sweetalert2";
+import { AuthContext } from "../Context/AuthProvider";
 
 
 const CqDetails = () => {
     const { id } = useParams();
+    const {user} = useContext(AuthContext)
     const [cqs, setCqs] = useState();
     const axiosPublic = useAxiosPublic();
     const [answers,setAnswers] = useState()
@@ -42,9 +44,12 @@ const CqDetails = () => {
 
     const handleSubmit = () => {
         const formData = new FormData();
-    
+        
+        formData.append('email', user?.email);
+        formData.append('category', category);
         formData.append('examId', _id);
         formData.append('examName', name);
+        formData.append('totalMarks', questions.reduce((total, question) => total + question.marks, 0));
     
         Object.entries(answers).forEach(([index, answerData]) => {
             formData.append(`answers[${index}][file]`, answerData.file);

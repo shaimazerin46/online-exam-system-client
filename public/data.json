@@ -4,6 +4,7 @@
       "category": "easy",
       "image": "https://i.ibb.co.com/DHJKVJP1/ai1.jpg",
       "description": "Artificial Intelligence Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What does AI stand for?", "options": ["Artificial Intelligence", "Automated Intelligence", "Advanced Intelligence", "Applied Intelligence"], "correctAnswer": "Artificial Intelligence" },
         { "text": "Which of the following is a subset of AI?", "options": ["Machine Learning", "Data Mining", "Web Development", "Networking"], "correctAnswer": "Machine Learning" },
@@ -22,6 +23,7 @@
       "category": "medium",
       "image": "https://i.ibb.co.com/G4RM05xx/ai2.jpg",
       "description": "Artificial Intelligence Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a feature in machine learning?", "options": ["An input variable", "An output variable", "A type of algorithm", "A dataset"], "correctAnswer": "An input variable" },
         { "text": "What is overfitting in AI?", "options": ["When a model learns the training data too well", "When a model fails to learn", "When a model is too simple", "When a model is not trained"], "correctAnswer": "When a model learns the training data too well" },
@@ -40,6 +42,7 @@
       "category": "hard",
       "image": "https://i.ibb.co.com/Dfd0GdMS/ai3.jpg",
       "description": "Artificial Intelligence Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is backpropagation?", "options": ["A method for training neural networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A method for training neural networks" },
         { "text": "What is a convolutional neural network?", "options": ["A type of neural network used for image processing", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for image processing" },
@@ -58,6 +61,7 @@
       "category": "easy",
       "image": "https://i.ibb.co.com/nhqy20W/ma3.jpg",
       "description": "Machine Learning Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is machine learning?", "options": ["A subset of AI", "A type of database", "A programming language", "A network protocol"], "correctAnswer": "A subset of AI" },
         { "text": "Which of the following is a type of machine learning?", "options": ["Supervised learning", "Data mining", "Web scraping", "Network analysis"], "correctAnswer": "Supervised learning" },
@@ -76,6 +80,7 @@
       "category": "medium",
       "image": "https://i.ibb.co.com/prWYpByN/ma2.jpg",
       "description": "Machine Learning Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a confusion matrix?", "options": ["A table used to evaluate the performance of a classifier", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A table used to evaluate the performance of a classifier" },
         { "text": "What is a feature vector?", "options": ["A set of features representing an object", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A set of features representing an object" },
@@ -94,6 +99,7 @@
       "category": "hard",
       "image": "https://i.ibb.co.com/yBcJqyFQ/ma1.webp",
       "description": "Machine Learning Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is backpropagation?", "options": ["A method for training neural networks", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A method for training neural networks" },
         { "text": "What is a recurrent neural network?", "options": ["A type of neural network used for sequential data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A type of neural network used for sequential data" },
@@ -112,6 +118,7 @@
       "category": "easy",
       "image": "https://i.ibb.co.com/rKd9G9ws/op1.jpg",
       "description": "Operating System Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is an operating system?", "options": ["System software", "Application software", "Hardware", "Network protocol"], "correctAnswer": "System software" },
         { "text": "Which of the following is an example of an operating system?", "options": ["Windows", "Microsoft Office", "Adobe Photoshop", "Google Chrome"], "correctAnswer": "Windows" },
@@ -130,6 +137,7 @@
       "category": "medium",
       "image": "https://i.ibb.co.com/4wCTLZ7Y/op2.jpg",
       "description": "Operating System Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a thread?", "options": ["The smallest unit of execution within a process", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "The smallest unit of execution within a process" },
         { "text": "What is a semaphore?", "options": ["A synchronization tool", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A synchronization tool" },
@@ -148,6 +156,7 @@
       "category": "hard",
       "image": "https://i.ibb.co.com/jkc7WG1F/op3.jpg",
       "description": "Operating System Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a race condition?", "options": ["A situation where the behavior of software depends on timing", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A situation where the behavior of software depends on timing" },
         { "text": "What is a critical section?", "options": ["A part of a program that accesses shared resources", "A type of hardware", "A network protocol", "A programming language"], "correctAnswer": "A part of a program that accesses shared resources" },
@@ -166,6 +175,7 @@
       "category": "easy",
       "image": "https://i.ibb.co.com/zWNrQtSM/data3.jpg",
       "description": "Database Management System Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a DBMS?", "options": ["Database Management System", "Data Backup Management System", "Data Binary Management System", "Data Business Management System"], "correctAnswer": "Database Management System" },
         { "text": "Which of the following is a type of DBMS?", "options": ["Relational DBMS", "Network DBMS", "Object-oriented DBMS", "All of the above"], "correctAnswer": "All of the above" },
@@ -184,6 +194,7 @@
       "category": "medium",
       "image": "https://i.ibb.co.com/G4c6B5tp/data2.jpg",
       "description": "Database Management System Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a join in SQL?", "options": ["A way to combine rows from two or more tables", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A way to combine rows from two or more tables" },
         { "text": "What is a subquery?", "options": ["A query within another query", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A query within another query" },
@@ -202,6 +213,7 @@
       "category": "hard",
        "image": "https://i.ibb.co.com/LdhK0b8t/data1.jpg",
       "description": "Database Management System Quiz",
+      "email": "shaimazerin46@gmail.com",
       "questions": [
         { "text": "What is a deadlock in DBMS?", "options": ["A situation where two or more transactions are waiting for each other to release locks", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A situation where two or more transactions are waiting for each other to release locks" },
         { "text": "What is a database checkpoint?", "options": ["A point in time where the database is in a consistent state", "A type of query", "A type of database", "A type of network protocol"], "correctAnswer": "A point in time where the database is in a consistent state" },
@@ -220,6 +232,7 @@
         "category": "easy",
         "image": "https://i.ibb.co.com/9mTSvt9n/web1.webp",
         "description": "Web Development Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What does HTML stand for?", "options": ["HyperText Markup Language", "HyperText Machine Language", "HyperText Markup Link", "HyperText Machine Link"], "correctAnswer": "HyperText Markup Language" },
           { "text": "What is CSS used for?", "options": ["Styling web pages", "Creating databases", "Writing server-side code", "Managing networks"], "correctAnswer": "Styling web pages" },
@@ -238,6 +251,7 @@
         "category": "medium",
         "image": "https://i.ibb.co.com/zHVLVJWj/web2.jpg",
         "description": "Web Development Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is AJAX?", "options": ["Asynchronous JavaScript and XML", "Advanced JavaScript and XML", "Asynchronous JavaScript and XHTML", "Advanced JavaScript and XHTML"], "correctAnswer": "Asynchronous JavaScript and XML" },
           { "text": "What is a REST API?", "options": ["An architectural style for designing networked applications", "A type of database", "A type of hardware", "A network protocol"], "correctAnswer": "An architectural style for designing networked applications" },
@@ -256,6 +270,7 @@
         "category": "hard",
         "image": "https://i.ibb.co.com/4ncnYsrv/web3.jpg",
         "description": "Web Development Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is server-side rendering (SSR)?", "options": ["Rendering web pages on the server", "Rendering web pages on the client", "A type of database", "A network protocol"], "correctAnswer": "Rendering web pages on the server" },
           { "text": "What is client-side rendering (CSR)?", "options": ["Rendering web pages on the client", "Rendering web pages on the server", "A type of database", "A network protocol"], "correctAnswer": "Rendering web pages on the client" },
@@ -274,6 +289,7 @@
         "category": "easy",
         "image": "https://i.ibb.co.com/hRKPz6W9/net1.jpg",
         "description": "Networking Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a network?", "options": ["A group of interconnected devices", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A group of interconnected devices" },
           { "text": "What is an IP address?", "options": ["A unique identifier for a device on a network", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A unique identifier for a device on a network" },
@@ -292,6 +308,7 @@
         "category": "medium",
         "image": "https://i.ibb.co.com/B5npp0y8/net2.jpg",
         "description": "Networking Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is TCP/IP?", "options": ["A suite of communication protocols", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A suite of communication protocols" },
           { "text": "What is UDP?", "options": ["A connectionless communication protocol", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A connectionless communication protocol" },
@@ -310,6 +327,7 @@
         "category": "hard",
         "image": "https://i.ibb.co.com/7tjvMsrC/net3.jpg",
         "description": "Networking Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is BGP?", "options": ["Border Gateway Protocol", "Border Gateway Process", "Border Gateway Packet", "Border Gateway Port"], "correctAnswer": "Border Gateway Protocol" },
           { "text": "What is OSPF?", "options": ["Open Shortest Path First", "Open Shortest Path Forward", "Open Shortest Path File", "Open Shortest Path Format"], "correctAnswer": "Open Shortest Path First" },
@@ -328,6 +346,7 @@
         "category": "easy",
         "image": "https://i.ibb.co.com/84DcTXTC/pa1.jpg",
         "description": "Pattern Recognition Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is pattern recognition?", "options": ["The identification of patterns in data", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "The identification of patterns in data" },
           { "text": "Which of the following is a technique used in pattern recognition?", "options": ["Machine learning", "Data mining", "Web development", "Networking"], "correctAnswer": "Machine learning" },
@@ -346,6 +365,7 @@
         "category": "medium",
         "image": "https://i.ibb.co.com/dJPzVxcG/pa2.jpg",
         "description": "Pattern Recognition Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is supervised learning in pattern recognition?", "options": ["Learning with labeled data", "Learning without data", "Learning with unlabeled data", "Learning through trial and error"], "correctAnswer": "Learning with labeled data" },
           { "text": "What is unsupervised learning in pattern recognition?", "options": ["Learning with unlabeled data", "Learning with labeled data", "Learning without data", "Learning through trial and error"], "correctAnswer": "Learning with unlabeled data" },
@@ -364,6 +384,7 @@
         "category": "hard",
         "image": "https://i.ibb.co.com/Tq0F6f5h/pa3.webp",
         "description": "Pattern Recognition Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
           { "text": "What is transfer learning in pattern recognition?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
@@ -382,6 +403,7 @@
         "category": "easy",
         "image": "https://i.ibb.co.com/zVvSQTg2/nu3.jpg",
         "description": "Neural Network Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a neural network?", "options": ["A system modeled after the human brain", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system modeled after the human brain" },
           { "text": "What is a neuron in a neural network?", "options": ["A basic unit of computation", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A basic unit of computation" },
@@ -400,6 +422,7 @@
         "category": "medium",
         "image": "https://i.ibb.co.com/WWvdMBtf/nu2.jpg",
         "description": "Neural Network Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
           { "text": "What is transfer learning in neural networks?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
@@ -418,6 +441,7 @@
         "category": "hard",
         "image": "https://i.ibb.co.com/qMk1D548/nu1.jpg",
         "description": "Neural Network Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a generative adversarial network (GAN)?", "options": ["A system of two neural networks competing against each other", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "A system of two neural networks competing against each other" },
           { "text": "What is transfer learning in neural networks?", "options": ["Using a pre-trained model for a new task", "A type of database", "A type of hardware", "A programming language"], "correctAnswer": "Using a pre-trained model for a new task" },
@@ -436,6 +460,7 @@
         "category": "easy",
         "image": "https://i.ibb.co.com/YT7kMm4r/sta3.jpg",
         "description": "Statistics Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is the mean?", "options": ["The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers", "The difference between the highest and lowest values"], "correctAnswer": "The average of a set of numbers" },
           { "text": "What is the median?", "options": ["The middle value in a set of numbers", "The average of a set of numbers", "The most frequent value in a set of numbers", "The difference between the highest and lowest values"], "correctAnswer": "The middle value in a set of numbers" },
@@ -454,6 +479,7 @@
         "category": "medium",
         "image": "https://i.ibb.co.com/C5FVrcJq/sta2.jpg",
         "description": "Statistics Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a t-test?", "options": ["A statistical test used to compare the means of two groups", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A statistical test used to compare the means of two groups" },
           { "text": "What is ANOVA?", "options": ["Analysis of Variance", "Analysis of Variables", "Analysis of Values", "Analysis of Variances"], "correctAnswer": "Analysis of Variance" },
@@ -472,6 +498,7 @@
         "category": "hard",
         "image": "https://i.ibb.co.com/0VMD1Pnt/sta1.jpg",
         "description": "Statistics Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a t-test?", "options": ["A statistical test used to compare the means of two groups", "The average of a set of numbers", "The middle value in a set of numbers", "The most frequent value in a set of numbers"], "correctAnswer": "A statistical test used to compare the means of two groups" },
           { "text": "What is ANOVA?", "options": ["Analysis of Variance", "Analysis of Variables", "Analysis of Values", "Analysis of Variances"], "correctAnswer": "Analysis of Variance" },
@@ -490,6 +517,7 @@
         "category": "easy",
         "image": "https://i.ibb.co.com/m5HgJ9kf/co3.jpg",
         "description": "Computer Fundamentals Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a CPU?", "options": ["Central Processing Unit", "Computer Processing Unit", "Central Power Unit", "Computer Power Unit"], "correctAnswer": "Central Processing Unit" },
           { "text": "What is RAM?", "options": ["Random Access Memory", "Read Access Memory", "Random Access Module", "Read Access Module"], "correctAnswer": "Random Access Memory" },
@@ -508,6 +536,7 @@
         "category": "medium",
         "image": "https://i.ibb.co.com/R4ytLNst/co2.jpg",
         "description": "Computer Fundamentals Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a cache?", "options": ["A small, fast memory that stores frequently accessed data", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A small, fast memory that stores frequently accessed data" },
           { "text": "What is a BIOS?", "options": ["Basic Input/Output System", "Basic Input/Output Software", "Basic Input/Output Service", "Basic Input/Output Structure"], "correctAnswer": "Basic Input/Output System" },
@@ -526,6 +555,7 @@
         "category": "hard",
         "image": "https://i.ibb.co.com/rKHPGTbC/co1.jpg",
         "description": "Computer Fundamentals Quiz",
+        "email": "shaimazerin46@gmail.com",
         "questions": [
           { "text": "What is a RAID array?", "options": ["A group of disks that work together to improve performance or redundancy", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A group of disks that work together to improve performance or redundancy" },
           { "text": "What is a virtual machine?", "options": ["A software emulation of a computer", "A type of software", "A type of hardware", "A network protocol"], "correctAnswer": "A software emulation of a computer" },

@@ -16,6 +16,7 @@ import WebButton from "../WebButton/WebButton";
 import { AuthContext } from "../../Context/AuthProvider";
 import Swal from "sweetalert2";
 import { IoHeart } from "react-icons/io5";
+import useUser from "../../hooks/useUser";
 
 
 
@@ -24,6 +25,9 @@ const Nav = () => {
   const navigate = useNavigate()
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
+  const [users] = useUser();
+  const filteredUser = users?.find(u=>u.email===user?.email);
+  const isAdmin = filteredUser?.role==='admin'
 
   const handlelogout = ()=>{
     logout()
@@ -40,10 +44,11 @@ const Nav = () => {
   const link = <>
         <li> <NavLink to='/'>Home</NavLink>
        </li>
-        <li> <NavLink to='/allExams'>Exams</NavLink></li>
-        <li><NavLink to='/cqTest'>CQ test</NavLink></li>
-        <li><NavLink to='/session'>Support</NavLink></li>
-        <li ><NavLink className="flex items-center" to='/wishlist'><span></span>Wishlist<span className="text-xl text-red-500"><IoHeart /></span></NavLink></li>
+
+        <li>{isAdmin? <NavLink to='/adminExam'>Added MCQ</NavLink> : <NavLink to='/allExams'>Exams</NavLink>}</li>
+        <li>{isAdmin? <NavLink to='/adminCq'>Added Cq</NavLink> :<NavLink to='/cqTest'>CQ test</NavLink>}</li>
+       {!isAdmin &&  <li><NavLink to='/session'>Support</NavLink></li>}
+       {!isAdmin &&  <li ><NavLink className="flex items-center" to='/wishlist'><span></span>Wishlist<span className="text-xl text-red-500"><IoHeart /></span></NavLink></li>}
   </>
 
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
@@ -156,7 +161,7 @@ const Nav = () => {
           <ul className="px-5 space-y-3 mt-2">
             
             <li>
-              <NavLink>Dashboard</NavLink>
+              <NavLink to='/dashboard'>Dashboard</NavLink>
             </li>
             <li onClick={handlelogout}>
             <WebButton text={"Logout"}></WebButton>

@@ -28,6 +28,7 @@ const SocialButton = () => {
                     name: res.user.displayName,
                     email: userEmail,
                     badge: 'none',
+                    role: 'user',
                     date: new Date().toUTCString()
                 };
                 

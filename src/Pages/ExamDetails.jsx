@@ -1,11 +1,13 @@
 import { useParams } from "react-router";
 import useExam from "../hooks/useExam";
 import { Radio, RadioGroup, FormControlLabel, FormControl, Button, Typography, Box } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import useAxiosPublic from "../hooks/useAxiosPublic";
+import { AuthContext } from "../Context/AuthProvider";
 
 const ExamDetails = () => {
     const axiosPublic = useAxiosPublic();
+    const {user} = useContext(AuthContext)
     const { id } = useParams();
     const [exams] = useExam();
     const filteredExam = exams?.find(exam => exam?._id === id);
@@ -67,6 +69,9 @@ const ExamDetails = () => {
         setScore({ correct, wrong });
     
         const data = {
+            subject: name,
+            category: category,
+            email: user?.email,
             correct: correct,
             wrong: wrong,
             marks: correct / questions.length, 
