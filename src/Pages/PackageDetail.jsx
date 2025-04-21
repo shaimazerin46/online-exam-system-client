@@ -54,7 +54,7 @@ const PackageDetail = () => {
             {
                     <div key={filteredPackage?._id}
                     style={{background: `url(${bg})`}}
-                     className=" shadow-xl h-full flex flex-col  rounded-2xl w-1/2 mx-auto">
+                     className=" shadow-xl h-full flex flex-col  rounded-2xl md:w-1/2 mx-auto">
                         <div className="py-5 h-full rounded-t-2xl" >
                         <h3 className="py-3 text-xl text-[#4F959D] font-bold text-center">{filteredPackage?.name}</h3>
                         <h3 className="text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">BDT {filteredPackage?.price}/Month</h3>

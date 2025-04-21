@@ -23,12 +23,12 @@ const Banner = () => {
   const slides = [img1, img2, img3, img4, img5, img6];
 
   return (
-    <div className="w-full  mt-20">
+    <div className="md:w-full mt-20">
       <Slider {...settings}>
         {slides.map((img, index) => (
           <div key={index}>
             <div
-              className="relative banner-div h-[550px]"
+              className="relative banner-div md:h-[550px] h-[200px]"
               style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${img})`,
                 backgroundSize: "cover",

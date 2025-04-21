@@ -69,9 +69,9 @@ const CqDetails = () => {
     }; 
     return (
         <div className="py-20 max-w-7xl mx-auto space-y-7">
-            <img src={image} alt="" className="w-full h-[350px] object-cover" />
+            <img src={image} alt="" className="md:w-full md:h-[350px] object-cover" />
             <h3 className="font-bold text-xl text-center">{description}</h3>
-            <div className="font-bold flex justify-between">
+            <div className="font-bold flex flex-wrap px-3 md:px-0 justify-between">
                 <h3>Title: {name}</h3>
                 <h3>Category: {category}</h3>
                 <h3>Questions: {questions.length}</h3>
@@ -82,7 +82,7 @@ const CqDetails = () => {
             <div>
                 {
                     questions?.map((question, idx) => (
-                        <div key={idx} className="p-5 shadow-2xl w-[600px] mx-auto mb-10">
+                        <div key={idx} className="p-5 shadow-2xl md:w-[600px] mx-auto mb-10">
                             <div className="flex text-sm   justify-between ">
                                 <h3>{question.question}</h3>
                                 <p>{question.marks}</p>

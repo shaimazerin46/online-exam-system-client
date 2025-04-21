@@ -45,18 +45,18 @@ const MailSection = () => {
     return (
         <div className="max-w-7xl mx-auto">
             <Headline text={"Contact us"}></Headline>
-            <div className="flex items-center justify-center shadow-2xl rounded-3xl">
-                <form  style={{background: `url(${bg})`, backgroundRepeat: "no-repeat"}} className="p-10 w-[500px] rounded-xl">
+            <div className="md:flex md:items-center md:justify-center shadow-2xl rounded-3xl">
+                <form  style={{background: `url(${bg})`, backgroundRepeat: "no-repeat"}} className="p-10 md:w-[500px] rounded-xl">
                 
                    
                    
-                    <textarea required name="text" value={message} onChange={(e) => setMessage(e.target.value)} className="textarea h-32 resize-none w-full rounded-l-3xl rounded-r-3xl focus:outline-0 focus:border-0 border-0 shadow-2xl" placeholder="Enter your message"></textarea><br/><br/>
+                    <textarea required name="text" value={message} onChange={(e) => setMessage(e.target.value)} className="textarea h-32 resize-none w-full rounded-l-3xl rounded-r-3xl focus:outline-0 focus:border-0 border-0 shadow-2xl p-5" placeholder="Enter your message"></textarea><br/><br/>
 
                     <div onClick={handleSubmit} className="flex justify-center">
                     <WebButton text={"Send"}></WebButton>
                     </div>
                 </form>
-                <div className="w-[500px]">
+                <div className="md:w-[500px]">
                     <Lottie animationData={mailLottie}></Lottie>
                 </div>
             </div>

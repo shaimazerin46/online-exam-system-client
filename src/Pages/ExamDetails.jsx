@@ -62,10 +62,10 @@ const ExamDetails = () => {
         setIsAnswered(new Array(questions.length).fill(true));
         setIsSubmitted(true);
     
-        // Calculate the score directly when submitting
+        
         const { correct, wrong } = calculateScore();
     
-        // Set the score directly instead of using the state
+        
         setScore({ correct, wrong });
     
         const data = {
@@ -78,7 +78,7 @@ const ExamDetails = () => {
             date: new Date().toUTCString()
         };
     
-        // Send the score data to the server
+        
         axiosPublic
             .post('/results', data)
             .then(() => {
@@ -99,10 +99,10 @@ const ExamDetails = () => {
     };
 
     return (
-        <div className="mt-40 max-w-7xl mx-auto space-y-7">
-            <img src={image} alt="exam" className="w-full h-[350px] object-cover" />
+        <div className="mt-20 max-w-7xl mx-auto space-y-7">
+            <img src={image} alt="exam" className="md:w-full md:h-[350px] object-cover" />
             <h3 className="text-center font-bold text-xl">{description}</h3>
-            <div className="flex justify-between font-bold">
+            <div className="flex flex-wrap px-3 md:px-0 justify-between font-bold">
                 <h3>Title: {name}</h3>
                 <h3>Category: {category}</h3>
                 <h3>Questions: {questions.length}</h3>
@@ -131,7 +131,7 @@ const ExamDetails = () => {
                 </Box>
             )}
 
-            <div className="w-[600px] mx-auto ">
+            <div className="md:w-[600px] mx-auto ">
                 {questions.map((question, questionIndex) => (
                     <div key={questionIndex} className="mb-6 p-4 bg-white shadow-2xl rounded-md">
                         <h4 className="font-semibold">{question.text}</h4>
