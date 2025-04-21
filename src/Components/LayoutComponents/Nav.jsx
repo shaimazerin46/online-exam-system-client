@@ -161,7 +161,7 @@ const Nav = () => {
           <ul className="px-5 space-y-3 mt-2">
             
             <li>
-              <NavLink to='/dashboard'>Dashboard</NavLink>
+             {isAdmin ? <NavLink to='/dashboard/users'>Dashboard</NavLink> : <NavLink to='/dashboard/userProfile'>Dashboard</NavLink>}
             </li>
             <li onClick={handlelogout}>
             <WebButton text={"Logout"}></WebButton>

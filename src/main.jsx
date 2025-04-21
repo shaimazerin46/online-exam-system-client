@@ -36,6 +36,10 @@ import UpdateCq from './Pages/Dashboard/Admin/UpdateCq'
 import AdminSession from './Pages/Dashboard/Admin/AdminSession'
 import UpdateSession from './Pages/Dashboard/Admin/UpdateSession'
 import AddSession from './Pages/Dashboard/Admin/AddSession'
+import UserProfile from './Pages/Dashboard/User/UserProfile'
+import UserResult from './Pages/Dashboard/User/userResult'
+import Payment from './Pages/Dashboard/User/Payment'
+import AdminRoute from './PrivateRoute/AdminRoute'
 
 const queryClient = new QueryClient()
 
@@ -70,18 +74,23 @@ createRoot(document.getElementById('root')).render(
           <Route path='/dashboard' element={<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>}>
 
               {/* admin */}
-              <Route path='/dashboard/users' element={<PrivateRoute><Users></Users></PrivateRoute>}></Route>
-              <Route path='/dashboard/exams' element={<PrivateRoute><Exams></Exams></PrivateRoute>}></Route>
-              <Route path='/dashboard/cq' element={<PrivateRoute><AllCq></AllCq></PrivateRoute>}></Route>
-              <Route path='/dashboard/mcqResults' element={<PrivateRoute><McqResult></McqResult></PrivateRoute>}></Route>
-              <Route path='/dashboard/cqResults' element={<PrivateRoute><CqResults></CqResults></PrivateRoute>}></Route>
-              <Route path='/dashboard/support' element={<PrivateRoute><AdminSession></AdminSession></PrivateRoute>}></Route>
-              <Route path='/dashboard/support/addSession' element={<PrivateRoute><AddSession></AddSession></PrivateRoute>}></Route>
-              <Route path='/dashboard/exams/addExam' element={<PrivateRoute><AddExam></AddExam></PrivateRoute>}></Route>
-              <Route path='/dashboard/exams/updateExam/:id' element={<PrivateRoute><UpdateExam></UpdateExam></PrivateRoute>}></Route>
-              <Route path='/dashboard/cq/updateCq/:id' element={<PrivateRoute><UpdateCq></UpdateCq></PrivateRoute>}></Route>
-              <Route path='/dashboard/exams/addCq' element={<PrivateRoute><AddCq></AddCq></PrivateRoute>}></Route>
-              <Route path='/dashboard/support/:id' element={<PrivateRoute><UpdateSession></UpdateSession></PrivateRoute>}></Route>
+              <Route path='/dashboard/users' element={<AdminRoute><Users></Users></AdminRoute>}></Route>
+              <Route path='/dashboard/exams' element={<AdminRoute><Exams></Exams></AdminRoute>}></Route>
+              <Route path='/dashboard/cq' element={<AdminRoute><AllCq></AllCq></AdminRoute>}></Route>
+              <Route path='/dashboard/mcqResults' element={<AdminRoute><McqResult></McqResult></AdminRoute>}></Route>
+              <Route path='/dashboard/cqResults' element={<AdminRoute><CqResults></CqResults></AdminRoute>}></Route>
+              <Route path='/dashboard/support' element={<AdminRoute><AdminSession></AdminSession></AdminRoute>}></Route>
+              <Route path='/dashboard/support/addSession' element={<AdminRoute><AddSession></AddSession></AdminRoute>}></Route>
+              <Route path='/dashboard/exams/addExam' element={<AdminRoute><AddExam></AddExam></AdminRoute>}></Route>
+              <Route path='/dashboard/exams/updateExam/:id' element={<AdminRoute><UpdateExam></UpdateExam></AdminRoute>}></Route>
+              <Route path='/dashboard/cq/updateCq/:id' element={<AdminRoute><UpdateCq></UpdateCq></AdminRoute>}></Route>
+              <Route path='/dashboard/exams/addCq' element={<AdminRoute><AddCq></AddCq></AdminRoute>}></Route>
+              <Route path='/dashboard/support/:id' element={<AdminRoute><UpdateSession></UpdateSession></AdminRoute>}></Route>
+
+              {/* user */}
+              <Route path='/dashboard/userProfile' element={<PrivateRoute><UserProfile></UserProfile></PrivateRoute>}></Route>
+              <Route path='/dashboard/userResult' element={<PrivateRoute><UserResult></UserResult></PrivateRoute>}></Route>
+              <Route path='/dashboard/payment' element={<PrivateRoute><Payment></Payment></PrivateRoute>}></Route>
               
           </Route>
 

@@ -3,7 +3,7 @@ import useUser from "../../../hooks/useUser";
 import { AuthContext } from "../../../Context/AuthProvider";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FiHome, FiUser, FiSettings, FiLogOut, FiX } from "react-icons/fi";
-import { FaUserShield } from "react-icons/fa";
+import { FaHeart, FaMoneyCheck, FaUserShield } from "react-icons/fa";
 import { FaNoteSticky } from "react-icons/fa6";
 import { GrMultiple } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
@@ -11,16 +11,16 @@ import { FaAward } from "react-icons/fa6";
 import { FaAlignCenter } from "react-icons/fa";
 import { FaArrowsAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
-import { MdSupportAgent } from "react-icons/md";
+import { MdOutlineSupportAgent, MdSupportAgent } from "react-icons/md";
 import { MdUnsubscribe } from "react-icons/md";
+import { SiTestrail } from "react-icons/si";
 
 const Sidebar = ({ onClose }) => {
     const [users] = useUser();
     const { user, logout } = useContext(AuthContext);
     const filtereduser = users?.find(u => u.email === user?.email);
     const isAdmin = filtereduser?.role === 'admin';
-    const isUser = filtereduser?.role === 'user';
-    const navigate = useNavigate
+    const navigate = useNavigate()
 
     const handleLogout = () => {
         logout()
@@ -51,7 +51,7 @@ const Sidebar = ({ onClose }) => {
             <div className="p-4 flex items-center space-x-3 border-b border-gray-700">
                 <div className="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
                     {user?.photoURL ? (
-                        <img src={user.photoURL} alt="Profile" className="w-full h-full rounded-full" />
+                        <img src={user.photoURL} alt="Profile" className="w-full h-full rounded-full object-cover" />
                     ) : (
                         <span className="text-lg">{user?.email?.charAt(0).toUpperCase()}</span>
                     )}
@@ -67,19 +67,47 @@ const Sidebar = ({ onClose }) => {
                 <ul className="space-y-2">
                    
                     
-                    {isUser && (
+                    {!isAdmin && (
+                       
+                        <>
+                         <li>
+                        <NavLink 
+                            to="/dashboard/userProfile" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <FiUser className="mr-3" />
+                            Profile
+                        </NavLink>
+                    </li>
+                        
                         <li>
-                            <NavLink 
-                                to="/dashboard/profile" 
-                                className={({ isActive }) => 
-                                    `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
-                                }
-                                onClick={onClose}
-                            >
-                                <FiUser className="mr-3" />
-                                Profile
-                            </NavLink>
-                        </li>
+                        <NavLink 
+                            to="/dashboard/userResult" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <FaAward  className="mr-3" />
+                            Result
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            to="/dashboard/payment" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <FaMoneyCheck  className="mr-3" />
+                            Payment history
+                        </NavLink>
+                    </li>
+                        </>
                     )}
 
                     {isAdmin && (
@@ -182,6 +210,57 @@ const Sidebar = ({ onClose }) => {
                         </NavLink>
                     </li>
 
+                   {!isAdmin && <>
+                    <li >
+                        <NavLink 
+                            to="/allExams" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <FaNoteSticky className="mr-3" />
+                            Exams
+                        </NavLink>
+                    </li>
+                    <li >
+                        <NavLink 
+                            to="/cqTest" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <SiTestrail className="mr-3" />
+                            CQ test
+                        </NavLink>
+                    </li>
+                    <li >
+                        <NavLink 
+                            to="/session" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <MdOutlineSupportAgent className="mr-3" />
+                            Support
+                        </NavLink>
+                    </li>
+                    <li >
+                        <NavLink 
+                            to="/wishlist" 
+                            className={({ isActive }) => 
+                                `flex items-center p-2 rounded transition ${isActive ? 'bg-gray-700' : 'hover:bg-gray-700'}`
+                            }
+                            onClick={onClose}
+                        >
+                            <FaHeart className="mr-3" />
+                            Wishlist
+                        </NavLink>
+                    </li>
+                   </>}
+
                     {isAdmin &&  <li >
                         <NavLink 
                             to="/adminExam" 
@@ -207,20 +286,18 @@ const Sidebar = ({ onClose }) => {
                             Added CQ
                         </NavLink>
                     </li>}
-                    </div>
-                </ul>
-            </nav>
-
-            {/* Footer/logout */}
-            <div className="p-4 border-t border-gray-700">
-                <button 
+                    <button 
                     onClick={handleLogout}
                     className="flex items-center w-full p-2 rounded hover:bg-gray-700 transition"
                 >
                     <FiLogOut className="mr-3" />
                     Logout
                 </button>
-            </div>
+                    </div>
+                </ul>
+            </nav>
+
+           
         </div>
     );
 };
