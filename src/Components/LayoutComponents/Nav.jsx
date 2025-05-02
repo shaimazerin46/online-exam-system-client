@@ -45,7 +45,7 @@ const Nav = () => {
         <li> <NavLink to='/'>Home</NavLink>
        </li>
 
-        <li>{isAdmin? <NavLink to='/adminExam'>Added MCQ</NavLink> : <NavLink to='/allExams'>Exams</NavLink>}</li>
+        <li>{isAdmin? <NavLink to='/adminExam'>Added MCQ</NavLink> : <NavLink to='/allExams'>MCQ</NavLink>}</li>
         <li>{isAdmin? <NavLink to='/adminCq'>Added Cq</NavLink> :<NavLink to='/cqTest'>CQ test</NavLink>}</li>
        {!isAdmin &&  <li><NavLink to='/session'>Support</NavLink></li>}
        {!isAdmin &&  <li ><NavLink className="flex items-center" to='/wishlist'><span></span>Wishlist<span className="text-xl text-red-500"><IoHeart /></span></NavLink></li>}

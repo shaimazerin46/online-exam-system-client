@@ -41,6 +41,7 @@ import UserResult from './Pages/Dashboard/User/userResult'
 import Payment from './Pages/Dashboard/User/Payment'
 import AdminRoute from './PrivateRoute/AdminRoute'
 
+
 const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')).render(
